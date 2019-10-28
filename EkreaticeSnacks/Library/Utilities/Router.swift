@@ -8,12 +8,43 @@
 
 import UIKit
 
-protocol Route { func start() }
+// MARK: - Routes
+
+enum Route {
+    case startUp(UIWindow?)
+    case login
+    case snacks
+    case addSnack
+}
 
 final class Router {
     private lazy var navigationController = UINavigationController()
     
+    // MARK: - Present route
+    
     func present(route: Route) {
-        route.start()
+        switch route {
+        case .login:
+            break
+        case .snacks:
+            break
+        case .addSnack:
+            break
+        case .startUp(let window):
+            showStartUp(window: window)
+        }
+    }
+    
+    // MARK: - Load storyboards
+    
+    private func showStartUp(window: UIWindow?) {
+        // check keychain storage
+        window?.rootViewController = navigationController
+        showLogin()
+    }
+    
+    private func showLogin() {
+        let loginVC = LoginViewController.loadFromStoryboard()
+        navigationController.viewControllers = [loginVC]
     }
 }

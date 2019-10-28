@@ -8,6 +8,10 @@
 
 import UIKit
 
-final class LoginViewController: UIViewController {
+final class LoginViewController: UIViewController, StoryboardLoadable {
     var loginPresenter: LoginPresenter!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }

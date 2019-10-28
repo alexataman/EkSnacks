@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		78A375ED2366F5B500F45339 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A375EC2366F5B500F45339 /* LoginPresenter.swift */; };
 		78A375EF2366F5EF00F45339 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A375EE2366F5EF00F45339 /* LoginInteractor.swift */; };
-		78A375F42366F78A00F45339 /* LoginInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A375F32366F78A00F45339 /* LoginInterface.storyboard */; };
+		78A375F42366F78A00F45339 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A375F32366F78A00F45339 /* LoginViewController.storyboard */; };
 		78A375F62366FB3E00F45339 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A375F52366FB3E00F45339 /* LoginRouter.swift */; };
 		78A375FD23670BDA00F45339 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A375FC23670BDA00F45339 /* Router.swift */; };
 		78C61D532366EAB70005B5A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C61D522366EAB70005B5A7 /* AppDelegate.swift */; };
@@ -22,6 +22,8 @@
 		78C61D7F2366F34C0005B5A7 /* UserInterfaceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C61D7E2366F34C0005B5A7 /* UserInterfaceAssembly.swift */; };
 		AE1F3A2EC26E86476F0DB485 /* Pods_EkreaticeSnacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F75B3F446AABAC79C6AD01 /* Pods_EkreaticeSnacks.framework */; };
 		DCBFA9825B82573C3095B917 /* Pods_EkreaticeSnacksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF5EED8FA7E23EB05DC0C0B /* Pods_EkreaticeSnacksTests.framework */; };
+		FA5D1B1323673E4C00BDA32E /* StoryboardLoadable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B1223673E4C00BDA32E /* StoryboardLoadable+Extension.swift */; };
+		FA5D1B152367415300BDA32E /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B142367415300BDA32E /* ServiceAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,7 @@
 		50A42A651F695FF58E4005BF /* Pods-EkreaticeSnacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EkreaticeSnacks.release.xcconfig"; path = "Target Support Files/Pods-EkreaticeSnacks/Pods-EkreaticeSnacks.release.xcconfig"; sourceTree = "<group>"; };
 		78A375EC2366F5B500F45339 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		78A375EE2366F5EF00F45339 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
-		78A375F32366F78A00F45339 /* LoginInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginInterface.storyboard; sourceTree = "<group>"; };
+		78A375F32366F78A00F45339 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		78A375F52366FB3E00F45339 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		78A375FC23670BDA00F45339 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		78C61D4F2366EAB70005B5A7 /* EkreaticeSnacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EkreaticeSnacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +60,8 @@
 		91F75B3F446AABAC79C6AD01 /* Pods_EkreaticeSnacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EkreaticeSnacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D406D3DB199FD88042A1E2 /* Pods-EkreaticeSnacksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EkreaticeSnacksTests.release.xcconfig"; path = "Target Support Files/Pods-EkreaticeSnacksTests/Pods-EkreaticeSnacksTests.release.xcconfig"; sourceTree = "<group>"; };
 		E9B948C2859C32D7A415C4E8 /* Pods-EkreaticeSnacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EkreaticeSnacks.debug.xcconfig"; path = "Target Support Files/Pods-EkreaticeSnacks/Pods-EkreaticeSnacks.debug.xcconfig"; sourceTree = "<group>"; };
+		FA5D1B1223673E4C00BDA32E /* StoryboardLoadable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoryboardLoadable+Extension.swift"; sourceTree = "<group>"; };
+		FA5D1B142367415300BDA32E /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +122,7 @@
 		78A375F22366F77400F45339 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				78A375F32366F78A00F45339 /* LoginInterface.storyboard */,
+				78A375F32366F78A00F45339 /* LoginViewController.storyboard */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -135,6 +139,7 @@
 		78A375F82367037C00F45339 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FA5D1B1123673E3800BDA32E /* UI */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -241,8 +246,17 @@
 			children = (
 				78C61D7C2366F21D0005B5A7 /* Injector.swift */,
 				78C61D7E2366F34C0005B5A7 /* UserInterfaceAssembly.swift */,
+				FA5D1B142367415300BDA32E /* ServiceAssembly.swift */,
 			);
 			path = DI;
+			sourceTree = "<group>";
+		};
+		FA5D1B1123673E3800BDA32E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FA5D1B1223673E4C00BDA32E /* StoryboardLoadable+Extension.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,7 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78C61D5F2366EAB80005B5A7 /* LaunchScreen.storyboard in Resources */,
-				78A375F42366F78A00F45339 /* LoginInterface.storyboard in Resources */,
+				78A375F42366F78A00F45339 /* LoginViewController.storyboard in Resources */,
 				78C61D5C2366EAB80005B5A7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,12 +427,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5D1B1323673E4C00BDA32E /* StoryboardLoadable+Extension.swift in Sources */,
 				78A375ED2366F5B500F45339 /* LoginPresenter.swift in Sources */,
 				78C61D772366EB340005B5A7 /* LoginViewController.swift in Sources */,
 				78A375EF2366F5EF00F45339 /* LoginInteractor.swift in Sources */,
 				78C61D532366EAB70005B5A7 /* AppDelegate.swift in Sources */,
 				78A375FD23670BDA00F45339 /* Router.swift in Sources */,
 				78C61D7F2366F34C0005B5A7 /* UserInterfaceAssembly.swift in Sources */,
+				FA5D1B152367415300BDA32E /* ServiceAssembly.swift in Sources */,
 				78C61D552366EAB70005B5A7 /* SceneDelegate.swift in Sources */,
 				78A375F62366FB3E00F45339 /* LoginRouter.swift in Sources */,
 				78C61D7D2366F21D0005B5A7 /* Injector.swift in Sources */,

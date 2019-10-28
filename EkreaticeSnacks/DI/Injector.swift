@@ -26,6 +26,18 @@ final class Injector {
     // MARK: Init
     
     private init() {
-        resolver = Assembler([UserInterfaceAssembly()], container: container).resolver
+        resolver = Assembler([
+            UserInterfaceAssembly(),
+            ServiceAssembly()
+        ], container: container).resolver
+    }
+    
+    // MARK: - Implementation
+    
+    func load<Service>(_ serviceType: Service.Type, name: String? = nil) -> Service {
+        guard let resolved = container.resolve(serviceType, name: name) else {
+            fatalError("Couldn't resolve \(serviceType)")
+        }
+        return resolved
     }
 }
