@@ -8,10 +8,22 @@
 
 import Foundation
 
+protocol LoginPresenterOutput {
+    func showSnacks()
+}
+
 final class LoginPresenter {
-    var loginInteractor: LoginInteractor
+    private let loginInteractor: LoginInteractor
+    private let loginRouter: LoginRouter
     
-    init(loginInteractor: LoginInteractor) {
+    init(loginInteractor: LoginInteractor, loginRouter: LoginRouter) {
         self.loginInteractor = loginInteractor
+        self.loginRouter = loginRouter
+    }
+}
+
+extension LoginPresenter: LoginPresenterOutput {
+    func showSnacks() {
+        loginRouter.showSnacks()
     }
 }

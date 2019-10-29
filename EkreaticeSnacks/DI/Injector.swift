@@ -28,7 +28,8 @@ final class Injector {
     private init() {
         resolver = Assembler([
             UserInterfaceAssembly(),
-            ServiceAssembly()
+            ServiceAssembly(),
+            NetworkAssembly()
         ], container: container).resolver
     }
     
