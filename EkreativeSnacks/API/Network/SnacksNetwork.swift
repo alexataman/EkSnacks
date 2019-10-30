@@ -1,5 +1,5 @@
 //
-//  SnacksNetwork.swift
+//  SnackNetwork.swift
 //  EkreativeSnacks
 //
 //  Created by Alex on 10/29/19.
@@ -8,10 +8,10 @@
 
 import Moya
 
-final class SnacksNetwork {
-    private let provider: MoyaProvider<SnacksTargetType>
+final class SnackNetwork {
+    private let provider: MoyaProvider<SnackTargetType>
     
-    init(provider: MoyaProvider<SnacksTargetType>) {
+    init(provider: MoyaProvider<SnackTargetType>) {
         self.provider = provider
     }
     

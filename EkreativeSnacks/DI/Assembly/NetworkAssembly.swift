@@ -13,10 +13,7 @@ final class NetworkAssembly: Assembly {
         container.register(LoginNetwork.self) { resolver in
             return .init(provider: MoyaFactory.make())
         }
-        container.register(SnacksNetwork.self) { resolver in
-            return .init(provider: MoyaFactory.make())
-        }
-        container.register(AddSnackNetwork.self) { resolver in
+        container.register(SnackNetwork.self) { resolver in
             return .init(provider: MoyaFactory.make())
         }
     }

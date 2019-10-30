@@ -9,9 +9,9 @@
 import Foundation
 
 final class AddSnackInteractor {
-    private let addSnackNetwork: AddSnackNetwork
+    private let snackNetwork: SnackNetwork
     
-    init(addSnackNetwork: AddSnackNetwork) {
-        self.addSnackNetwork = addSnackNetwork
+    init(snackNetwork: SnackNetwork) {
+        self.snackNetwork = snackNetwork
     }
 }

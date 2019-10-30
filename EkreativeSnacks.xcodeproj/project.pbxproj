@@ -39,12 +39,17 @@
 		FA5D1B332368657A00BDA32E /* SnacksRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B322368657A00BDA32E /* SnacksRouter.swift */; };
 		FA5D1B3A2368684E00BDA32E /* SnacksViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5D1B392368684E00BDA32E /* SnacksViewController.storyboard */; };
 		FA5D1B3D236869AB00BDA32E /* SnacksDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B3C236869AB00BDA32E /* SnacksDataSource.swift */; };
-		FAD7944223698A4500ADC98A /* AddSnackNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7943C23698A4500ADC98A /* AddSnackNetwork.swift */; };
 		FAD7944323698A4500ADC98A /* SnacksNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7943D23698A4500ADC98A /* SnacksNetwork.swift */; };
 		FAD7944423698A4500ADC98A /* LoginTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7943F23698A4500ADC98A /* LoginTargetType.swift */; };
 		FAD7944523698A4500ADC98A /* SnacksTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7944023698A4500ADC98A /* SnacksTargetType.swift */; };
-		FAD7944623698A4500ADC98A /* AddSnackTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7944123698A4500ADC98A /* AddSnackTargetType.swift */; };
 		FAD7944823698A9700ADC98A /* LoginNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7944723698A9700ADC98A /* LoginNetwork.swift */; };
+		FAD7944E2369987700ADC98A /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD7944B2369987700ADC98A /* Montserrat-Medium.ttf */; };
+		FAD7944F2369987700ADC98A /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD7944C2369987700ADC98A /* Montserrat-Regular.ttf */; };
+		FAD794502369987700ADC98A /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD7944D2369987700ADC98A /* Montserrat-SemiBold.ttf */; };
+		FAD7945323699A6300ADC98A /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7945223699A6300ADC98A /* Button.swift */; };
+		FAD7945523699D5C00ADC98A /* Montserrat-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAD7945423699D5C00ADC98A /* Montserrat-Black.otf */; };
+		FAD7945723699DD400ADC98A /* NoNavigationBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7945623699DD400ADC98A /* NoNavigationBarViewController.swift */; };
+		FAD794592369A10400ADC98A /* Montserrat-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAD794582369A10400ADC98A /* Montserrat-ExtraBold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,12 +103,17 @@
 		FA5D1B322368657A00BDA32E /* SnacksRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnacksRouter.swift; sourceTree = "<group>"; };
 		FA5D1B392368684E00BDA32E /* SnacksViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SnacksViewController.storyboard; sourceTree = "<group>"; };
 		FA5D1B3C236869AB00BDA32E /* SnacksDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnacksDataSource.swift; sourceTree = "<group>"; };
-		FAD7943C23698A4500ADC98A /* AddSnackNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSnackNetwork.swift; sourceTree = "<group>"; };
 		FAD7943D23698A4500ADC98A /* SnacksNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnacksNetwork.swift; sourceTree = "<group>"; };
 		FAD7943F23698A4500ADC98A /* LoginTargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTargetType.swift; sourceTree = "<group>"; };
 		FAD7944023698A4500ADC98A /* SnacksTargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnacksTargetType.swift; sourceTree = "<group>"; };
-		FAD7944123698A4500ADC98A /* AddSnackTargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSnackTargetType.swift; sourceTree = "<group>"; };
 		FAD7944723698A9700ADC98A /* LoginNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNetwork.swift; sourceTree = "<group>"; };
+		FAD7944B2369987700ADC98A /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		FAD7944C2369987700ADC98A /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		FAD7944D2369987700ADC98A /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		FAD7945223699A6300ADC98A /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		FAD7945423699D5C00ADC98A /* Montserrat-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.otf"; sourceTree = "<group>"; };
+		FAD7945623699DD400ADC98A /* NoNavigationBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNavigationBarViewController.swift; sourceTree = "<group>"; };
+		FAD794582369A10400ADC98A /* Montserrat-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +215,7 @@
 		78C61D512366EAB70005B5A7 /* EkreativeSnacks */ = {
 			isa = PBXGroup;
 			children = (
+				FAD7945123699A0800ADC98A /* UI */,
 				FAD7943A23698A3700ADC98A /* API */,
 				FA5D1B242368617D00BDA32E /* Models */,
 				78A375F7236702FE00F45339 /* Library */,
@@ -248,6 +259,7 @@
 		78C61D782366EC1E0005B5A7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FAD7944A2369985F00ADC98A /* Fonts */,
 				78C61D7A2366EDCD0005B5A7 /* Delegates */,
 				78C61D602366EAB80005B5A7 /* Info.plist */,
 				78C61D5D2366EAB80005B5A7 /* LaunchScreen.storyboard */,
@@ -367,7 +379,6 @@
 			isa = PBXGroup;
 			children = (
 				FAD7944723698A9700ADC98A /* LoginNetwork.swift */,
-				FAD7943C23698A4500ADC98A /* AddSnackNetwork.swift */,
 				FAD7943D23698A4500ADC98A /* SnacksNetwork.swift */,
 				FAD7943E23698A4500ADC98A /* TargetTypes */,
 			);
@@ -379,7 +390,6 @@
 			children = (
 				FAD7943F23698A4500ADC98A /* LoginTargetType.swift */,
 				FAD7944023698A4500ADC98A /* SnacksTargetType.swift */,
-				FAD7944123698A4500ADC98A /* AddSnackTargetType.swift */,
 			);
 			path = TargetTypes;
 			sourceTree = "<group>";
@@ -392,6 +402,27 @@
 				FA5D1B272368627100BDA32E /* NetworkAssembly.swift */,
 			);
 			path = Assembly;
+			sourceTree = "<group>";
+		};
+		FAD7944A2369985F00ADC98A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FAD794582369A10400ADC98A /* Montserrat-ExtraBold.otf */,
+				FAD7945423699D5C00ADC98A /* Montserrat-Black.otf */,
+				FAD7944B2369987700ADC98A /* Montserrat-Medium.ttf */,
+				FAD7944C2369987700ADC98A /* Montserrat-Regular.ttf */,
+				FAD7944D2369987700ADC98A /* Montserrat-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FAD7945123699A0800ADC98A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FAD7945223699A6300ADC98A /* Button.swift */,
+				FAD7945623699DD400ADC98A /* NoNavigationBarViewController.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,7 +509,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD794592369A10400ADC98A /* Montserrat-ExtraBold.otf in Resources */,
+				FAD7944F2369987700ADC98A /* Montserrat-Regular.ttf in Resources */,
 				FA5D1B3A2368684E00BDA32E /* SnacksViewController.storyboard in Resources */,
+				FAD7944E2369987700ADC98A /* Montserrat-Medium.ttf in Resources */,
+				FAD794502369987700ADC98A /* Montserrat-SemiBold.ttf in Resources */,
+				FAD7945523699D5C00ADC98A /* Montserrat-Black.otf in Resources */,
 				78C61D5F2366EAB80005B5A7 /* LaunchScreen.storyboard in Resources */,
 				78A375F42366F78A00F45339 /* LoginViewController.storyboard in Resources */,
 				78C61D5C2366EAB80005B5A7 /* Assets.xcassets in Resources */,
@@ -564,7 +600,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA5D1B1323673E4C00BDA32E /* StoryboardLoadable+Extension.swift in Sources */,
-				FAD7944223698A4500ADC98A /* AddSnackNetwork.swift in Sources */,
 				FA5D1B332368657A00BDA32E /* SnacksRouter.swift in Sources */,
 				78A375ED2366F5B500F45339 /* LoginPresenter.swift in Sources */,
 				FA5D1B312368653E00BDA32E /* SnacksInteractor.swift in Sources */,
@@ -573,14 +608,15 @@
 				FAD7944523698A4500ADC98A /* SnacksTargetType.swift in Sources */,
 				FA5D1B262368618C00BDA32E /* User.swift in Sources */,
 				78C61D532366EAB70005B5A7 /* AppDelegate.swift in Sources */,
+				FAD7945323699A6300ADC98A /* Button.swift in Sources */,
 				78A375FD23670BDA00F45339 /* Router.swift in Sources */,
-				FAD7944623698A4500ADC98A /* AddSnackTargetType.swift in Sources */,
 				78C61D7F2366F34C0005B5A7 /* UserInterfaceAssembly.swift in Sources */,
 				FAD7944323698A4500ADC98A /* SnacksNetwork.swift in Sources */,
 				FA5D1B1F23685E0A00BDA32E /* TargetType+Extension.swift in Sources */,
 				FA5D1B152367415300BDA32E /* ServiceAssembly.swift in Sources */,
 				FAD7944823698A9700ADC98A /* LoginNetwork.swift in Sources */,
 				FA5D1B3D236869AB00BDA32E /* SnacksDataSource.swift in Sources */,
+				FAD7945723699DD400ADC98A /* NoNavigationBarViewController.swift in Sources */,
 				FA05FADC236980C700206794 /* AddSnackPresenter.swift in Sources */,
 				FA5D1B2F236864FB00BDA32E /* SnacksPresenter.swift in Sources */,
 				78C61D552366EAB70005B5A7 /* SceneDelegate.swift in Sources */,

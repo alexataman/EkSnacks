@@ -8,6 +8,6 @@
 
 final class SnacksInteractor {
     var snacksRouter: SnacksRouter?
-    var snacksNetwork: SnacksNetwork?
+    var snackNetwork: SnackNetwork?
     var snacksPresenterOutput: SnacksPresenterOutput?
 }

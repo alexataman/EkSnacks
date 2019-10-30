@@ -9,6 +9,8 @@ target 'EkreativeSnacks' do
   pod 'KeychainSwift'
   pod 'Moya'
   pod 'PromiseKit'
+  pod 'SkyFloatingLabelTextField'
+  pod 'IQKeyboardManagerSwift'
 
   target 'EkreativeSnacksTests' do
     inherit! :search_paths

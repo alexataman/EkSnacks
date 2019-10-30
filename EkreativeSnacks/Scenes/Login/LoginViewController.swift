@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class LoginViewController: UIViewController, StoryboardLoadable {
+final class LoginViewController: NoNavigationBarViewController, StoryboardLoadable {
     var loginPresenter: LoginPresenter!
     
     override func viewDidLoad() {

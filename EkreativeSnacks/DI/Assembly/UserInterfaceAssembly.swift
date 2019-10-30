@@ -60,7 +60,7 @@ private extension UserInterfaceAssembly {
         container.register(SnacksInteractor.self) { resolver in
             .init()
         }.initCompleted { resolver, controller in
-            controller.snacksNetwork = resolver.resolve(SnacksNetwork.self)
+            controller.snackNetwork = resolver.resolve(SnackNetwork.self)
             controller.snacksRouter = resolver.resolve(SnacksRouter.self)
             controller.snacksPresenterOutput = resolver.resolve(SnacksPresenter.self)
         }
@@ -81,7 +81,7 @@ private extension UserInterfaceAssembly {
             controller.addSnackRouter = resolver.resolve(AddSnackRouter.self)
         }
         container.register(AddSnackInteractor.self) { resolver in
-            .init(addSnackNetwork: resolver.resolve(AddSnackNetwork.self)!)
+            .init(snackNetwork: resolver.resolve(SnackNetwork.self)!)
         }
         container.register(AddSnackRouter.self) { resolver in
             .init(router: resolver.resolve(Router.self)!)

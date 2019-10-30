@@ -7,11 +7,11 @@
 //
 import Moya
 
-enum SnacksTargetType {
+enum SnackTargetType {
     case fetch
 }
 
-extension SnacksTargetType: TargetType {
+extension SnackTargetType: TargetType {
     var headers: [String: String]? {
         return nil
     }
@@ -35,7 +35,7 @@ extension SnacksTargetType: TargetType {
     }
 
     var sampleData: Data {
-        return "SnacksJson".contentsOfFile().data(using: .utf8) ?? .init()
+        return "SnackJson".contentsOfFile().data(using: .utf8) ?? .init()
     }
 
     var task: Task {
