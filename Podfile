@@ -2,7 +2,7 @@
 # platform :ios, '9.0'
 use_frameworks!
 
-target 'EkreaticeSnacks' do
+target 'EkreativeSnacks' do
   
   pod 'Swinject', '~> 2.6.2'
   pod 'SwinjectStoryboard', '~> 2.2'
@@ -10,7 +10,7 @@ target 'EkreaticeSnacks' do
   pod 'Moya'
   pod 'PromiseKit'
 
-  target 'EkreaticeSnacksTests' do
+  target 'EkreativeSnacksTests' do
     inherit! :search_paths
     # Pods for testing
   end
