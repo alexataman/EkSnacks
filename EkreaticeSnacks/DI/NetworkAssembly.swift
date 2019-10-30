@@ -16,5 +16,8 @@ final class NetworkAssembly: Assembly {
         container.register(SnacksNetwork.self) { resolver in
             return .init(provider: MoyaFactory.make())
         }
+        container.register(AddSnackNetwork.self) { resolver in
+            return .init(provider: MoyaFactory.make())
+        }
     }
 }

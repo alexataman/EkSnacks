@@ -14,6 +14,7 @@ final class UserInterfaceAssembly: Assembly {
         // Register Dependencies
         registerLoginDependencies(container: container)
         registerSnacksDependencies(container: container)
+        registerAddSnackDependencies(container: container)
         
         // Storyboard init
         container.storyboardInitCompleted(LoginViewController.self) { resolver, controller in
@@ -22,6 +23,9 @@ final class UserInterfaceAssembly: Assembly {
         container.storyboardInitCompleted(SnacksViewController.self) {
             resolver, controller in
             controller.snacksPresenter = resolver.resolve(SnacksPresenter.self)
+        }
+        container.storyboardInitCompleted(AddSnackViewController.self) { resolver, controller in
+            controller.addSnackPresenter = resolver.resolve(AddSnackPresenter.self)
         }
     }
 }
@@ -61,6 +65,25 @@ private extension UserInterfaceAssembly {
             controller.snacksPresenterOutput = resolver.resolve(SnacksPresenter.self)
         }
         container.register(SnacksRouter.self) { resolver in
+            .init(router: resolver.resolve(Router.self)!)
+        }
+    }
+}
+
+// MARK: - Register AddSnack Dependencies
+
+private extension UserInterfaceAssembly {
+    func registerAddSnackDependencies(container: Container) {
+        container.register(AddSnackPresenter.self) { _ in
+            .init()
+        }.initCompleted { resolver, controller in
+            controller.addSnackInteractor = resolver.resolve(AddSnackInteractor.self)
+            controller.addSnackRouter = resolver.resolve(AddSnackRouter.self)
+        }
+        container.register(AddSnackInteractor.self) { resolver in
+            .init(addSnackNetwork: resolver.resolve(AddSnackNetwork.self)!)
+        }
+        container.register(AddSnackRouter.self) { resolver in
             .init(router: resolver.resolve(Router.self)!)
         }
     }

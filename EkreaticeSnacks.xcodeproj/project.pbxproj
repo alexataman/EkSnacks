@@ -22,6 +22,13 @@
 		78C61D7F2366F34C0005B5A7 /* UserInterfaceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C61D7E2366F34C0005B5A7 /* UserInterfaceAssembly.swift */; };
 		AE1F3A2EC26E86476F0DB485 /* Pods_EkreaticeSnacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F75B3F446AABAC79C6AD01 /* Pods_EkreaticeSnacks.framework */; };
 		DCBFA9825B82573C3095B917 /* Pods_EkreaticeSnacksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF5EED8FA7E23EB05DC0C0B /* Pods_EkreaticeSnacksTests.framework */; };
+		FA05FADA2369809000206794 /* AddSnackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05FAD92369809000206794 /* AddSnackViewController.swift */; };
+		FA05FADC236980C700206794 /* AddSnackPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05FADB236980C700206794 /* AddSnackPresenter.swift */; };
+		FA05FADE2369813200206794 /* AddSnackRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05FADD2369813200206794 /* AddSnackRouter.swift */; };
+		FA05FAE02369815B00206794 /* AddSnackInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05FADF2369815B00206794 /* AddSnackInteractor.swift */; };
+		FA05FAE22369819300206794 /* AddSnackNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05FAE12369819300206794 /* AddSnackNetwork.swift */; };
+		FA05FAE4236981A800206794 /* AddSnackTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05FAE3236981A800206794 /* AddSnackTargetType.swift */; };
+		FA05FAE6236981E700206794 /* Snack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05FAE5236981E700206794 /* Snack.swift */; };
 		FA5D1B1323673E4C00BDA32E /* StoryboardLoadable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B1223673E4C00BDA32E /* StoryboardLoadable+Extension.swift */; };
 		FA5D1B152367415300BDA32E /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B142367415300BDA32E /* ServiceAssembly.swift */; };
 		FA5D1B1723685BBD00BDA32E /* LoginNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B1623685BBD00BDA32E /* LoginNetwork.swift */; };
@@ -75,6 +82,13 @@
 		91F75B3F446AABAC79C6AD01 /* Pods_EkreaticeSnacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EkreaticeSnacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D406D3DB199FD88042A1E2 /* Pods-EkreaticeSnacksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EkreaticeSnacksTests.release.xcconfig"; path = "Target Support Files/Pods-EkreaticeSnacksTests/Pods-EkreaticeSnacksTests.release.xcconfig"; sourceTree = "<group>"; };
 		E9B948C2859C32D7A415C4E8 /* Pods-EkreaticeSnacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EkreaticeSnacks.debug.xcconfig"; path = "Target Support Files/Pods-EkreaticeSnacks/Pods-EkreaticeSnacks.debug.xcconfig"; sourceTree = "<group>"; };
+		FA05FAD92369809000206794 /* AddSnackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSnackViewController.swift; sourceTree = "<group>"; };
+		FA05FADB236980C700206794 /* AddSnackPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSnackPresenter.swift; sourceTree = "<group>"; };
+		FA05FADD2369813200206794 /* AddSnackRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSnackRouter.swift; sourceTree = "<group>"; };
+		FA05FADF2369815B00206794 /* AddSnackInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSnackInteractor.swift; sourceTree = "<group>"; };
+		FA05FAE12369819300206794 /* AddSnackNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddSnackNetwork.swift; path = Network/AddSnackNetwork.swift; sourceTree = SOURCE_ROOT; };
+		FA05FAE3236981A800206794 /* AddSnackTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddSnackTargetType.swift; path = Network/TargetTypes/AddSnackTargetType.swift; sourceTree = SOURCE_ROOT; };
+		FA05FAE5236981E700206794 /* Snack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snack.swift; sourceTree = "<group>"; };
 		FA5D1B1223673E4C00BDA32E /* StoryboardLoadable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoryboardLoadable+Extension.swift"; sourceTree = "<group>"; };
 		FA5D1B142367415300BDA32E /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 		FA5D1B1623685BBD00BDA32E /* LoginNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginNetwork.swift; path = EkreaticeSnacks/DI/LoginNetwork.swift; sourceTree = SOURCE_ROOT; };
@@ -148,6 +162,7 @@
 				FA5D1B1A23685D2400BDA32E /* TargetTypes */,
 				FA5D1B1623685BBD00BDA32E /* LoginNetwork.swift */,
 				FA5D1B342368667000BDA32E /* SnacksNetwork.swift */,
+				FA05FAE12369819300206794 /* AddSnackNetwork.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -233,6 +248,7 @@
 		78C61D742366EAFF0005B5A7 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				FA05FAD82369807A00206794 /* AddSnack */,
 				FA5D1B2B2368641200BDA32E /* Snaks */,
 				78C61D752366EB090005B5A7 /* Login */,
 			);
@@ -290,6 +306,17 @@
 			path = DI;
 			sourceTree = "<group>";
 		};
+		FA05FAD82369807A00206794 /* AddSnack */ = {
+			isa = PBXGroup;
+			children = (
+				FA05FAD92369809000206794 /* AddSnackViewController.swift */,
+				FA05FADB236980C700206794 /* AddSnackPresenter.swift */,
+				FA05FADD2369813200206794 /* AddSnackRouter.swift */,
+				FA05FADF2369815B00206794 /* AddSnackInteractor.swift */,
+			);
+			path = AddSnack;
+			sourceTree = "<group>";
+		};
 		FA5D1B1123673E3800BDA32E /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +330,7 @@
 			children = (
 				FA5D1B1B23685D3500BDA32E /* LoginTargetType.swift */,
 				FA5D1B362368668800BDA32E /* SnacksTargetType.swift */,
+				FA05FAE3236981A800206794 /* AddSnackTargetType.swift */,
 			);
 			path = TargetTypes;
 			sourceTree = "<group>";
@@ -327,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				FA5D1B252368618C00BDA32E /* User.swift */,
+				FA05FAE5236981E700206794 /* Snack.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -540,18 +569,25 @@
 				78C61D532366EAB70005B5A7 /* AppDelegate.swift in Sources */,
 				78A375FD23670BDA00F45339 /* Router.swift in Sources */,
 				78C61D7F2366F34C0005B5A7 /* UserInterfaceAssembly.swift in Sources */,
+				FA05FAE4236981A800206794 /* AddSnackTargetType.swift in Sources */,
 				FA5D1B352368667000BDA32E /* SnacksNetwork.swift in Sources */,
 				FA5D1B1F23685E0A00BDA32E /* TargetType+Extension.swift in Sources */,
 				FA5D1B372368668800BDA32E /* SnacksTargetType.swift in Sources */,
 				FA5D1B152367415300BDA32E /* ServiceAssembly.swift in Sources */,
 				FA5D1B3D236869AB00BDA32E /* SnacksDataSource.swift in Sources */,
+				FA05FADC236980C700206794 /* AddSnackPresenter.swift in Sources */,
 				FA5D1B2F236864FB00BDA32E /* SnacksPresenter.swift in Sources */,
 				78C61D552366EAB70005B5A7 /* SceneDelegate.swift in Sources */,
+				FA05FAE22369819300206794 /* AddSnackNetwork.swift in Sources */,
 				FA5D1B2A236863C900BDA32E /* MoyaFactory.swift in Sources */,
+				FA05FAE6236981E700206794 /* Snack.swift in Sources */,
 				FA5D1B1C23685D3500BDA32E /* LoginTargetType.swift in Sources */,
+				FA05FADE2369813200206794 /* AddSnackRouter.swift in Sources */,
 				FA5D1B282368627100BDA32E /* NetworkAssembly.swift in Sources */,
 				78A375F62366FB3E00F45339 /* LoginRouter.swift in Sources */,
 				FA5D1B2D236864BE00BDA32E /* SnacksViewController.swift in Sources */,
+				FA05FADA2369809000206794 /* AddSnackViewController.swift in Sources */,
+				FA05FAE02369815B00206794 /* AddSnackInteractor.swift in Sources */,
 				FA5D1B2323685E6400BDA32E /* String+Extension.swift in Sources */,
 				78C61D7D2366F21D0005B5A7 /* Injector.swift in Sources */,
 			);
