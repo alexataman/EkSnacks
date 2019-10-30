@@ -25,13 +25,9 @@
 		FA05FADC236980C700206794 /* AddSnackPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05FADB236980C700206794 /* AddSnackPresenter.swift */; };
 		FA05FADE2369813200206794 /* AddSnackRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05FADD2369813200206794 /* AddSnackRouter.swift */; };
 		FA05FAE02369815B00206794 /* AddSnackInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05FADF2369815B00206794 /* AddSnackInteractor.swift */; };
-		FA05FAE22369819300206794 /* AddSnackNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05FAE12369819300206794 /* AddSnackNetwork.swift */; };
-		FA05FAE4236981A800206794 /* AddSnackTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05FAE3236981A800206794 /* AddSnackTargetType.swift */; };
 		FA05FAE6236981E700206794 /* Snack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05FAE5236981E700206794 /* Snack.swift */; };
 		FA5D1B1323673E4C00BDA32E /* StoryboardLoadable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B1223673E4C00BDA32E /* StoryboardLoadable+Extension.swift */; };
 		FA5D1B152367415300BDA32E /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B142367415300BDA32E /* ServiceAssembly.swift */; };
-		FA5D1B1723685BBD00BDA32E /* LoginNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B1623685BBD00BDA32E /* LoginNetwork.swift */; };
-		FA5D1B1C23685D3500BDA32E /* LoginTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B1B23685D3500BDA32E /* LoginTargetType.swift */; };
 		FA5D1B1F23685E0A00BDA32E /* TargetType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B1E23685E0A00BDA32E /* TargetType+Extension.swift */; };
 		FA5D1B2323685E6400BDA32E /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B2223685E6400BDA32E /* String+Extension.swift */; };
 		FA5D1B262368618C00BDA32E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B252368618C00BDA32E /* User.swift */; };
@@ -41,10 +37,14 @@
 		FA5D1B2F236864FB00BDA32E /* SnacksPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B2E236864FB00BDA32E /* SnacksPresenter.swift */; };
 		FA5D1B312368653E00BDA32E /* SnacksInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B302368653E00BDA32E /* SnacksInteractor.swift */; };
 		FA5D1B332368657A00BDA32E /* SnacksRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B322368657A00BDA32E /* SnacksRouter.swift */; };
-		FA5D1B352368667000BDA32E /* SnacksNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B342368667000BDA32E /* SnacksNetwork.swift */; };
-		FA5D1B372368668800BDA32E /* SnacksTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B362368668800BDA32E /* SnacksTargetType.swift */; };
 		FA5D1B3A2368684E00BDA32E /* SnacksViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5D1B392368684E00BDA32E /* SnacksViewController.storyboard */; };
 		FA5D1B3D236869AB00BDA32E /* SnacksDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B3C236869AB00BDA32E /* SnacksDataSource.swift */; };
+		FAD7944223698A4500ADC98A /* AddSnackNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7943C23698A4500ADC98A /* AddSnackNetwork.swift */; };
+		FAD7944323698A4500ADC98A /* SnacksNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7943D23698A4500ADC98A /* SnacksNetwork.swift */; };
+		FAD7944423698A4500ADC98A /* LoginTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7943F23698A4500ADC98A /* LoginTargetType.swift */; };
+		FAD7944523698A4500ADC98A /* SnacksTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7944023698A4500ADC98A /* SnacksTargetType.swift */; };
+		FAD7944623698A4500ADC98A /* AddSnackTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7944123698A4500ADC98A /* AddSnackTargetType.swift */; };
+		FAD7944823698A9700ADC98A /* LoginNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7944723698A9700ADC98A /* LoginNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,13 +84,9 @@
 		FA05FADB236980C700206794 /* AddSnackPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSnackPresenter.swift; sourceTree = "<group>"; };
 		FA05FADD2369813200206794 /* AddSnackRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSnackRouter.swift; sourceTree = "<group>"; };
 		FA05FADF2369815B00206794 /* AddSnackInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSnackInteractor.swift; sourceTree = "<group>"; };
-		FA05FAE12369819300206794 /* AddSnackNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddSnackNetwork.swift; path = Network/AddSnackNetwork.swift; sourceTree = SOURCE_ROOT; };
-		FA05FAE3236981A800206794 /* AddSnackTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddSnackTargetType.swift; path = Network/TargetTypes/AddSnackTargetType.swift; sourceTree = SOURCE_ROOT; };
 		FA05FAE5236981E700206794 /* Snack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snack.swift; sourceTree = "<group>"; };
 		FA5D1B1223673E4C00BDA32E /* StoryboardLoadable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoryboardLoadable+Extension.swift"; sourceTree = "<group>"; };
 		FA5D1B142367415300BDA32E /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
-		FA5D1B1623685BBD00BDA32E /* LoginNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginNetwork.swift; path = EkreativeSnacks/DI/LoginNetwork.swift; sourceTree = SOURCE_ROOT; };
-		FA5D1B1B23685D3500BDA32E /* LoginTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginTargetType.swift; path = Network/TargetTypes/LoginTargetType.swift; sourceTree = SOURCE_ROOT; };
 		FA5D1B1E23685E0A00BDA32E /* TargetType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetType+Extension.swift"; sourceTree = "<group>"; };
 		FA5D1B2223685E6400BDA32E /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		FA5D1B252368618C00BDA32E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -100,10 +96,14 @@
 		FA5D1B2E236864FB00BDA32E /* SnacksPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnacksPresenter.swift; sourceTree = "<group>"; };
 		FA5D1B302368653E00BDA32E /* SnacksInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnacksInteractor.swift; sourceTree = "<group>"; };
 		FA5D1B322368657A00BDA32E /* SnacksRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnacksRouter.swift; sourceTree = "<group>"; };
-		FA5D1B342368667000BDA32E /* SnacksNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SnacksNetwork.swift; path = Network/SnacksNetwork.swift; sourceTree = SOURCE_ROOT; };
-		FA5D1B362368668800BDA32E /* SnacksTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SnacksTargetType.swift; path = Network/TargetTypes/SnacksTargetType.swift; sourceTree = SOURCE_ROOT; };
 		FA5D1B392368684E00BDA32E /* SnacksViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SnacksViewController.storyboard; sourceTree = "<group>"; };
 		FA5D1B3C236869AB00BDA32E /* SnacksDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnacksDataSource.swift; sourceTree = "<group>"; };
+		FAD7943C23698A4500ADC98A /* AddSnackNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSnackNetwork.swift; sourceTree = "<group>"; };
+		FAD7943D23698A4500ADC98A /* SnacksNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnacksNetwork.swift; sourceTree = "<group>"; };
+		FAD7943F23698A4500ADC98A /* LoginTargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTargetType.swift; sourceTree = "<group>"; };
+		FAD7944023698A4500ADC98A /* SnacksTargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnacksTargetType.swift; sourceTree = "<group>"; };
+		FAD7944123698A4500ADC98A /* AddSnackTargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSnackTargetType.swift; sourceTree = "<group>"; };
+		FAD7944723698A9700ADC98A /* LoginNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,25 +144,6 @@
 				C7D406D3DB199FD88042A1E2 /* Pods-EkreativeSnacksTests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		78A375F02366F71200F45339 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				78A375F12366F71900F45339 /* Network */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		78A375F12366F71900F45339 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				FA5D1B1A23685D2400BDA32E /* TargetTypes */,
-				FA5D1B1623685BBD00BDA32E /* LoginNetwork.swift */,
-				FA5D1B342368667000BDA32E /* SnacksNetwork.swift */,
-				FA05FAE12369819300206794 /* AddSnackNetwork.swift */,
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 		78A375F22366F77400F45339 /* Interface */ = {
@@ -224,9 +205,9 @@
 		78C61D512366EAB70005B5A7 /* EkreativeSnacks */ = {
 			isa = PBXGroup;
 			children = (
+				FAD7943A23698A3700ADC98A /* API */,
 				FA5D1B242368617D00BDA32E /* Models */,
 				78A375F7236702FE00F45339 /* Library */,
-				78A375F02366F71200F45339 /* API */,
 				78C61D7B2366EE350005B5A7 /* DI */,
 				78C61D782366EC1E0005B5A7 /* Supporting Files */,
 				78C61D742366EAFF0005B5A7 /* Scenes */,
@@ -322,16 +303,6 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		FA5D1B1A23685D2400BDA32E /* TargetTypes */ = {
-			isa = PBXGroup;
-			children = (
-				FA5D1B1B23685D3500BDA32E /* LoginTargetType.swift */,
-				FA5D1B362368668800BDA32E /* SnacksTargetType.swift */,
-				FA05FAE3236981A800206794 /* AddSnackTargetType.swift */,
-			);
-			path = TargetTypes;
-			sourceTree = "<group>";
-		};
 		FA5D1B1D23685DE700BDA32E /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,6 +355,35 @@
 				FA5D1B3C236869AB00BDA32E /* SnacksDataSource.swift */,
 			);
 			path = DataSource;
+			sourceTree = "<group>";
+		};
+		FAD7943A23698A3700ADC98A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FAD7943B23698A4500ADC98A /* Network */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FAD7943B23698A4500ADC98A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FAD7944723698A9700ADC98A /* LoginNetwork.swift */,
+				FAD7943C23698A4500ADC98A /* AddSnackNetwork.swift */,
+				FAD7943D23698A4500ADC98A /* SnacksNetwork.swift */,
+				FAD7943E23698A4500ADC98A /* TargetTypes */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FAD7943E23698A4500ADC98A /* TargetTypes */ = {
+			isa = PBXGroup;
+			children = (
+				FAD7943F23698A4500ADC98A /* LoginTargetType.swift */,
+				FAD7944023698A4500ADC98A /* SnacksTargetType.swift */,
+				FAD7944123698A4500ADC98A /* AddSnackTargetType.swift */,
+			);
+			path = TargetTypes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -556,29 +556,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA5D1B1323673E4C00BDA32E /* StoryboardLoadable+Extension.swift in Sources */,
+				FAD7944223698A4500ADC98A /* AddSnackNetwork.swift in Sources */,
 				FA5D1B332368657A00BDA32E /* SnacksRouter.swift in Sources */,
 				78A375ED2366F5B500F45339 /* LoginPresenter.swift in Sources */,
 				FA5D1B312368653E00BDA32E /* SnacksInteractor.swift in Sources */,
 				78C61D772366EB340005B5A7 /* LoginViewController.swift in Sources */,
 				78A375EF2366F5EF00F45339 /* LoginInteractor.swift in Sources */,
+				FAD7944523698A4500ADC98A /* SnacksTargetType.swift in Sources */,
 				FA5D1B262368618C00BDA32E /* User.swift in Sources */,
-				FA5D1B1723685BBD00BDA32E /* LoginNetwork.swift in Sources */,
 				78C61D532366EAB70005B5A7 /* AppDelegate.swift in Sources */,
 				78A375FD23670BDA00F45339 /* Router.swift in Sources */,
+				FAD7944623698A4500ADC98A /* AddSnackTargetType.swift in Sources */,
 				78C61D7F2366F34C0005B5A7 /* UserInterfaceAssembly.swift in Sources */,
-				FA05FAE4236981A800206794 /* AddSnackTargetType.swift in Sources */,
-				FA5D1B352368667000BDA32E /* SnacksNetwork.swift in Sources */,
+				FAD7944323698A4500ADC98A /* SnacksNetwork.swift in Sources */,
 				FA5D1B1F23685E0A00BDA32E /* TargetType+Extension.swift in Sources */,
-				FA5D1B372368668800BDA32E /* SnacksTargetType.swift in Sources */,
 				FA5D1B152367415300BDA32E /* ServiceAssembly.swift in Sources */,
+				FAD7944823698A9700ADC98A /* LoginNetwork.swift in Sources */,
 				FA5D1B3D236869AB00BDA32E /* SnacksDataSource.swift in Sources */,
 				FA05FADC236980C700206794 /* AddSnackPresenter.swift in Sources */,
 				FA5D1B2F236864FB00BDA32E /* SnacksPresenter.swift in Sources */,
 				78C61D552366EAB70005B5A7 /* SceneDelegate.swift in Sources */,
-				FA05FAE22369819300206794 /* AddSnackNetwork.swift in Sources */,
 				FA5D1B2A236863C900BDA32E /* MoyaFactory.swift in Sources */,
 				FA05FAE6236981E700206794 /* Snack.swift in Sources */,
-				FA5D1B1C23685D3500BDA32E /* LoginTargetType.swift in Sources */,
 				FA05FADE2369813200206794 /* AddSnackRouter.swift in Sources */,
 				FA5D1B282368627100BDA32E /* NetworkAssembly.swift in Sources */,
 				78A375F62366FB3E00F45339 /* LoginRouter.swift in Sources */,
@@ -586,6 +585,7 @@
 				FA05FADA2369809000206794 /* AddSnackViewController.swift in Sources */,
 				FA05FAE02369815B00206794 /* AddSnackInteractor.swift in Sources */,
 				FA5D1B2323685E6400BDA32E /* String+Extension.swift in Sources */,
+				FAD7944423698A4500ADC98A /* LoginTargetType.swift in Sources */,
 				78C61D7D2366F21D0005B5A7 /* Injector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
