@@ -276,10 +276,8 @@
 		78C61D7B2366EE350005B5A7 /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				FAD7944923698B0700ADC98A /* Assembly */,
 				78C61D7C2366F21D0005B5A7 /* Injector.swift */,
-				78C61D7E2366F34C0005B5A7 /* UserInterfaceAssembly.swift */,
-				FA5D1B142367415300BDA32E /* ServiceAssembly.swift */,
-				FA5D1B272368627100BDA32E /* NetworkAssembly.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -384,6 +382,16 @@
 				FAD7944123698A4500ADC98A /* AddSnackTargetType.swift */,
 			);
 			path = TargetTypes;
+			sourceTree = "<group>";
+		};
+		FAD7944923698B0700ADC98A /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				78C61D7E2366F34C0005B5A7 /* UserInterfaceAssembly.swift */,
+				FA5D1B142367415300BDA32E /* ServiceAssembly.swift */,
+				FA5D1B272368627100BDA32E /* NetworkAssembly.swift */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
