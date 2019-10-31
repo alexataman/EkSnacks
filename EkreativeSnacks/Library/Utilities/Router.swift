@@ -18,7 +18,11 @@ enum Route {
 }
 
 final class Router {
+    
+    // MARK: - Private properties
+    
     private let navigationController = UINavigationController()
+    private lazy var keychainService = KeychainService()
     
     // MARK: - Present route
     
@@ -38,9 +42,8 @@ final class Router {
     // MARK: - Load storyboards
     
     private func showStartUp(window: UIWindow?) {
-        // check keychain storage
         window?.rootViewController = navigationController
-        showLogin()
+        keychainService.isValueExists(key: KeychainKeys.userData) ? showSnacks() : showLogin()
     }
     
     private func showLogin() {

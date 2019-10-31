@@ -10,9 +10,6 @@ import SwinjectStoryboard
 
 final class NetworkAssembly: Assembly {
     func assemble(container: Container) {
-        container.register(LoginNetwork.self) { resolver in
-            return .init(provider: MoyaFactory.make())
-        }
         container.register(SnackNetwork.self) { resolver in
             return .init(provider: MoyaFactory.make())
         }

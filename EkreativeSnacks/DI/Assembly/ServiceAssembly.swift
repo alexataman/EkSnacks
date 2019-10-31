@@ -14,5 +14,8 @@ final class ServiceAssembly: Assembly {
         container.register(Router.self) { resolver in
             return Router.shared
         }
+        container.register(KeychainService.self) { _ in
+            .init()
+        }
     }
 }

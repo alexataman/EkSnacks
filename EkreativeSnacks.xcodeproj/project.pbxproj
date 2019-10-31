@@ -40,9 +40,7 @@
 		FA5D1B3A2368684E00BDA32E /* SnacksViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5D1B392368684E00BDA32E /* SnacksViewController.storyboard */; };
 		FA5D1B3D236869AB00BDA32E /* SnacksDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B3C236869AB00BDA32E /* SnacksDataSource.swift */; };
 		FAD7944323698A4500ADC98A /* SnacksNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7943D23698A4500ADC98A /* SnacksNetwork.swift */; };
-		FAD7944423698A4500ADC98A /* LoginTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7943F23698A4500ADC98A /* LoginTargetType.swift */; };
 		FAD7944523698A4500ADC98A /* SnacksTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7944023698A4500ADC98A /* SnacksTargetType.swift */; };
-		FAD7944823698A9700ADC98A /* LoginNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7944723698A9700ADC98A /* LoginNetwork.swift */; };
 		FAD7944E2369987700ADC98A /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD7944B2369987700ADC98A /* Montserrat-Medium.ttf */; };
 		FAD7944F2369987700ADC98A /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD7944C2369987700ADC98A /* Montserrat-Regular.ttf */; };
 		FAD794502369987700ADC98A /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD7944D2369987700ADC98A /* Montserrat-SemiBold.ttf */; };
@@ -50,6 +48,8 @@
 		FAD7945523699D5C00ADC98A /* Montserrat-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAD7945423699D5C00ADC98A /* Montserrat-Black.otf */; };
 		FAD7945723699DD400ADC98A /* NoNavigationBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7945623699DD400ADC98A /* NoNavigationBarViewController.swift */; };
 		FAD794592369A10400ADC98A /* Montserrat-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAD794582369A10400ADC98A /* Montserrat-ExtraBold.otf */; };
+		FAD7945D236B7A9500ADC98A /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7945C236B7A9500ADC98A /* KeychainService.swift */; };
+		FAD7945F236B837600ADC98A /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7945E236B837600ADC98A /* Validatable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,9 +104,7 @@
 		FA5D1B392368684E00BDA32E /* SnacksViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SnacksViewController.storyboard; sourceTree = "<group>"; };
 		FA5D1B3C236869AB00BDA32E /* SnacksDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnacksDataSource.swift; sourceTree = "<group>"; };
 		FAD7943D23698A4500ADC98A /* SnacksNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnacksNetwork.swift; sourceTree = "<group>"; };
-		FAD7943F23698A4500ADC98A /* LoginTargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTargetType.swift; sourceTree = "<group>"; };
 		FAD7944023698A4500ADC98A /* SnacksTargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnacksTargetType.swift; sourceTree = "<group>"; };
-		FAD7944723698A9700ADC98A /* LoginNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNetwork.swift; sourceTree = "<group>"; };
 		FAD7944B2369987700ADC98A /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		FAD7944C2369987700ADC98A /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		FAD7944D2369987700ADC98A /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -114,6 +112,8 @@
 		FAD7945423699D5C00ADC98A /* Montserrat-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.otf"; sourceTree = "<group>"; };
 		FAD7945623699DD400ADC98A /* NoNavigationBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNavigationBarViewController.swift; sourceTree = "<group>"; };
 		FAD794582369A10400ADC98A /* Montserrat-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.otf"; sourceTree = "<group>"; };
+		FAD7945C236B7A9500ADC98A /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		FAD7945E236B837600ADC98A /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = EkreativeSnacks/Library/Validatable.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +188,7 @@
 			children = (
 				78A375FC23670BDA00F45339 /* Router.swift */,
 				FA5D1B29236863C900BDA32E /* MoyaFactory.swift */,
+				FAD7945E236B837600ADC98A /* Validatable.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -215,6 +216,7 @@
 		78C61D512366EAB70005B5A7 /* EkreativeSnacks */ = {
 			isa = PBXGroup;
 			children = (
+				FAD7945A236B798600ADC98A /* BusinessLogic */,
 				FAD7945123699A0800ADC98A /* UI */,
 				FAD7943A23698A3700ADC98A /* API */,
 				FA5D1B242368617D00BDA32E /* Models */,
@@ -378,7 +380,6 @@
 		FAD7943B23698A4500ADC98A /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				FAD7944723698A9700ADC98A /* LoginNetwork.swift */,
 				FAD7943D23698A4500ADC98A /* SnacksNetwork.swift */,
 				FAD7943E23698A4500ADC98A /* TargetTypes */,
 			);
@@ -388,7 +389,6 @@
 		FAD7943E23698A4500ADC98A /* TargetTypes */ = {
 			isa = PBXGroup;
 			children = (
-				FAD7943F23698A4500ADC98A /* LoginTargetType.swift */,
 				FAD7944023698A4500ADC98A /* SnacksTargetType.swift */,
 			);
 			path = TargetTypes;
@@ -423,6 +423,22 @@
 				FAD7945623699DD400ADC98A /* NoNavigationBarViewController.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		FAD7945A236B798600ADC98A /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				FAD7945B236B799900ADC98A /* Services */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		FAD7945B236B799900ADC98A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FAD7945C236B7A9500ADC98A /* KeychainService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -604,6 +620,7 @@
 				78A375ED2366F5B500F45339 /* LoginPresenter.swift in Sources */,
 				FA5D1B312368653E00BDA32E /* SnacksInteractor.swift in Sources */,
 				78C61D772366EB340005B5A7 /* LoginViewController.swift in Sources */,
+				FAD7945F236B837600ADC98A /* Validatable.swift in Sources */,
 				78A375EF2366F5EF00F45339 /* LoginInteractor.swift in Sources */,
 				FAD7944523698A4500ADC98A /* SnacksTargetType.swift in Sources */,
 				FA5D1B262368618C00BDA32E /* User.swift in Sources */,
@@ -614,7 +631,6 @@
 				FAD7944323698A4500ADC98A /* SnacksNetwork.swift in Sources */,
 				FA5D1B1F23685E0A00BDA32E /* TargetType+Extension.swift in Sources */,
 				FA5D1B152367415300BDA32E /* ServiceAssembly.swift in Sources */,
-				FAD7944823698A9700ADC98A /* LoginNetwork.swift in Sources */,
 				FA5D1B3D236869AB00BDA32E /* SnacksDataSource.swift in Sources */,
 				FAD7945723699DD400ADC98A /* NoNavigationBarViewController.swift in Sources */,
 				FA05FADC236980C700206794 /* AddSnackPresenter.swift in Sources */,
@@ -629,7 +645,7 @@
 				FA05FADA2369809000206794 /* AddSnackViewController.swift in Sources */,
 				FA05FAE02369815B00206794 /* AddSnackInteractor.swift in Sources */,
 				FA5D1B2323685E6400BDA32E /* String+Extension.swift in Sources */,
-				FAD7944423698A4500ADC98A /* LoginTargetType.swift in Sources */,
+				FAD7945D236B7A9500ADC98A /* KeychainService.swift in Sources */,
 				78C61D7D2366F21D0005B5A7 /* Injector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

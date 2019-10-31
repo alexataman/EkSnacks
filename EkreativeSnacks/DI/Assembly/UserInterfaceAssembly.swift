@@ -41,8 +41,8 @@ private extension UserInterfaceAssembly {
         container.register(LoginInteractor.self) { _ in
             .init()
         }.initCompleted { resolver, controller in
-            controller.loginNetwork = resolver.resolve(LoginNetwork.self)
             controller.loginPresenterOutput = resolver.resolve(LoginPresenter.self)
+            controller.keychainService = resolver.resolve(KeychainService.self)
         }
         container.register(LoginRouter.self) { resolver in
             .init(router: resolver.resolve(Router.self)!)

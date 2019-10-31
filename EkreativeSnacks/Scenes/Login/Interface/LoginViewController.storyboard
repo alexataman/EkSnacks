@@ -111,6 +111,9 @@
                                                 <real key="value" value="24"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginAction:" destination="1UP-rf-JgS" eventType="touchUpInside" id="uGO-C1-I81"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -124,6 +127,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MtZ-vN-nPN"/>
                     </view>
+                    <connections>
+                        <outlet property="firstNameTextField" destination="moR-91-hzA" id="KRB-p4-2DW"/>
+                        <outlet property="lastNameTextField" destination="hbH-ra-UiY" id="aXm-dO-6xa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JD8-oE-jgw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

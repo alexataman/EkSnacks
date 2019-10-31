@@ -9,6 +9,11 @@
 import Foundation
 
 final class LoginInteractor {
-    var loginNetwork: LoginNetwork?
     var loginPresenterOutput: LoginPresenterOutput?
+    var keychainService: KeychainService?
+    
+    func save(user: User) {
+        keychainService?.set(value: user.username, key: KeychainKeys.userData)
+        loginPresenterOutput?.showSnacks()
+    }
 }
