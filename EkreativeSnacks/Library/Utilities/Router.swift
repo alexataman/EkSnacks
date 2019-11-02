@@ -29,11 +29,11 @@ final class Router {
     func present(route: Route) {
         switch route {
         case .login:
-            break
+            showLogin()
         case .snacks:
             showSnacks()
         case .addSnack:
-            break
+            showAddSnack()
         case .startUp(let window):
             showStartUp(window: window)
         }
@@ -54,6 +54,12 @@ final class Router {
     private func showSnacks() {
         let snacksVC = SnacksViewController.loadFromStoryboard()
         navigationController.viewControllers = [snacksVC]
+    }
+    
+    private func showAddSnack() {
+        let addSnack = AddSnackViewController.loadFromStoryboard()
+        addSnack.modalPresentationStyle = .overFullScreen
+        navigationController.present(addSnack, animated: true, completion: nil)
     }
 }
 

@@ -14,4 +14,8 @@ final class AddSnackInteractor {
     init(snackNetwork: SnackNetwork) {
         self.snackNetwork = snackNetwork
     }
+    
+    func send(snack: Snack) {
+        snackNetwork.post(snack: snack).cauterize()
+    }
 }

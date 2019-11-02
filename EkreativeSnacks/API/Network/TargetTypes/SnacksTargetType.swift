@@ -9,6 +9,7 @@ import Moya
 
 enum SnackTargetType {
     case fetch
+    case post(Snack)
 }
 
 extension SnackTargetType: TargetType {
@@ -19,11 +20,16 @@ extension SnackTargetType: TargetType {
     var baseURL: URL { return appServer }
 
     var path: String {
-        return ""
+        return "items"
     }
 
     var method: Moya.Method {
-        return .get
+        switch self {
+        case .fetch:
+            return .get
+        case .post:
+            return .post
+        }
     }
 
     var parameters: [String: Any]? {
@@ -39,7 +45,12 @@ extension SnackTargetType: TargetType {
     }
 
     var task: Task {
-        return .requestPlain
+        switch self {
+        case .fetch:
+            return .requestPlain
+        case .post(let snack):
+            return .requestJSONEncodable(snack)
+        }
     }
 
     var validate: Bool {

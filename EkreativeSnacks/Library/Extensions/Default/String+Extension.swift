@@ -16,4 +16,12 @@ extension String {
             } catch { fatalError("Failed to read text from bundle file \(self)") }
         } else { fatalError("Failed to load file from bundle \(self)") }
     }
+    
+    var day: Date {
+        return Date.iso8601Full.date(from: self) ?? .init()
+    }
+    
+    func toInt() -> Int {
+        return Int(self) ?? 0
+    }
 }

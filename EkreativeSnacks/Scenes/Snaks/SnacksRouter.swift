@@ -12,4 +12,12 @@ final class SnacksRouter {
     init(router: Router) {
         self.router = router
     }
+    
+    func showLogin() {
+        router.present(route: .login)
+    }
+    
+    func showAddSnack() {
+        router.present(route: .addSnack)
+    }
 }

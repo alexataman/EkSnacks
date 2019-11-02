@@ -26,6 +26,9 @@
 		FA05FADE2369813200206794 /* AddSnackRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05FADD2369813200206794 /* AddSnackRouter.swift */; };
 		FA05FAE02369815B00206794 /* AddSnackInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05FADF2369815B00206794 /* AddSnackInteractor.swift */; };
 		FA05FAE6236981E700206794 /* Snack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05FAE5236981E700206794 /* Snack.swift */; };
+		FA542483236D84E500A04FA7 /* EmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA542482236D84E500A04FA7 /* EmptyCell.xib */; };
+		FA542486236D87A700A04FA7 /* AddSnackViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA542485236D87A700A04FA7 /* AddSnackViewController.storyboard */; };
+		FA542488236D924900A04FA7 /* UITextField+InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA542487236D924900A04FA7 /* UITextField+InputView.swift */; };
 		FA5D1B1323673E4C00BDA32E /* StoryboardLoadable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B1223673E4C00BDA32E /* StoryboardLoadable+Extension.swift */; };
 		FA5D1B152367415300BDA32E /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B142367415300BDA32E /* ServiceAssembly.swift */; };
 		FA5D1B1F23685E0A00BDA32E /* TargetType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B1E23685E0A00BDA32E /* TargetType+Extension.swift */; };
@@ -50,6 +53,13 @@
 		FAD794592369A10400ADC98A /* Montserrat-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAD794582369A10400ADC98A /* Montserrat-ExtraBold.otf */; };
 		FAD7945D236B7A9500ADC98A /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7945C236B7A9500ADC98A /* KeychainService.swift */; };
 		FAD7945F236B837600ADC98A /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7945E236B837600ADC98A /* Validatable.swift */; };
+		FAD79461236C76FC00ADC98A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD79460236C76FC00ADC98A /* Date+Extension.swift */; };
+		FAD79466236C78DE00ADC98A /* SnackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD79465236C78DE00ADC98A /* SnackCell.swift */; };
+		FAD7946A236C792000ADC98A /* SnackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD79469236C792000ADC98A /* SnackCell.xib */; };
+		FAD7946C236CB2E700ADC98A /* SnackSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7946B236CB2E700ADC98A /* SnackSection.swift */; };
+		FAD7946E236CB30A00ADC98A /* SnackSection.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD7946D236CB30A00ADC98A /* SnackSection.xib */; };
+		FAD79470236CB47E00ADC98A /* Moya+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7946F236CB47E00ADC98A /* Moya+Extension.swift */; };
+		FAD79472236CCE1500ADC98A /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD79471236CCE1500ADC98A /* Int+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +100,9 @@
 		FA05FADD2369813200206794 /* AddSnackRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSnackRouter.swift; sourceTree = "<group>"; };
 		FA05FADF2369815B00206794 /* AddSnackInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSnackInteractor.swift; sourceTree = "<group>"; };
 		FA05FAE5236981E700206794 /* Snack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snack.swift; sourceTree = "<group>"; };
+		FA542482236D84E500A04FA7 /* EmptyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyCell.xib; sourceTree = "<group>"; };
+		FA542485236D87A700A04FA7 /* AddSnackViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddSnackViewController.storyboard; sourceTree = "<group>"; };
+		FA542487236D924900A04FA7 /* UITextField+InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+InputView.swift"; sourceTree = "<group>"; };
 		FA5D1B1223673E4C00BDA32E /* StoryboardLoadable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoryboardLoadable+Extension.swift"; sourceTree = "<group>"; };
 		FA5D1B142367415300BDA32E /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 		FA5D1B1E23685E0A00BDA32E /* TargetType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetType+Extension.swift"; sourceTree = "<group>"; };
@@ -114,6 +127,13 @@
 		FAD794582369A10400ADC98A /* Montserrat-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.otf"; sourceTree = "<group>"; };
 		FAD7945C236B7A9500ADC98A /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		FAD7945E236B837600ADC98A /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = EkreativeSnacks/Library/Validatable.swift; sourceTree = SOURCE_ROOT; };
+		FAD79460236C76FC00ADC98A /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		FAD79465236C78DE00ADC98A /* SnackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackCell.swift; sourceTree = "<group>"; };
+		FAD79469236C792000ADC98A /* SnackCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnackCell.xib; sourceTree = "<group>"; };
+		FAD7946B236CB2E700ADC98A /* SnackSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackSection.swift; sourceTree = "<group>"; };
+		FAD7946D236CB30A00ADC98A /* SnackSection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnackSection.xib; sourceTree = "<group>"; };
+		FAD7946F236CB47E00ADC98A /* Moya+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+Extension.swift"; sourceTree = "<group>"; };
+		FAD79471236CCE1500ADC98A /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,14 +236,14 @@
 		78C61D512366EAB70005B5A7 /* EkreativeSnacks */ = {
 			isa = PBXGroup;
 			children = (
-				FAD7945A236B798600ADC98A /* BusinessLogic */,
-				FAD7945123699A0800ADC98A /* UI */,
 				FAD7943A23698A3700ADC98A /* API */,
-				FA5D1B242368617D00BDA32E /* Models */,
-				78A375F7236702FE00F45339 /* Library */,
+				FAD7945A236B798600ADC98A /* BusinessLogic */,
 				78C61D7B2366EE350005B5A7 /* DI */,
-				78C61D782366EC1E0005B5A7 /* Supporting Files */,
+				78A375F7236702FE00F45339 /* Library */,
+				FA5D1B242368617D00BDA32E /* Models */,
 				78C61D742366EAFF0005B5A7 /* Scenes */,
+				78C61D782366EC1E0005B5A7 /* Supporting Files */,
+				FAD7945123699A0800ADC98A /* UI */,
 			);
 			path = EkreativeSnacks;
 			sourceTree = "<group>";
@@ -299,12 +319,21 @@
 		FA05FAD82369807A00206794 /* AddSnack */ = {
 			isa = PBXGroup;
 			children = (
+				FA542484236D879200A04FA7 /* Interface */,
 				FA05FAD92369809000206794 /* AddSnackViewController.swift */,
 				FA05FADB236980C700206794 /* AddSnackPresenter.swift */,
 				FA05FADD2369813200206794 /* AddSnackRouter.swift */,
 				FA05FADF2369815B00206794 /* AddSnackInteractor.swift */,
 			);
 			path = AddSnack;
+			sourceTree = "<group>";
+		};
+		FA542484236D879200A04FA7 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				FA542485236D87A700A04FA7 /* AddSnackViewController.storyboard */,
+			);
+			path = Interface;
 			sourceTree = "<group>";
 		};
 		FA5D1B1123673E3800BDA32E /* UI */ = {
@@ -319,6 +348,7 @@
 			isa = PBXGroup;
 			children = (
 				FA5D1B1E23685E0A00BDA32E /* TargetType+Extension.swift */,
+				FAD7946F236CB47E00ADC98A /* Moya+Extension.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -327,6 +357,9 @@
 			isa = PBXGroup;
 			children = (
 				FA5D1B2223685E6400BDA32E /* String+Extension.swift */,
+				FAD79460236C76FC00ADC98A /* Date+Extension.swift */,
+				FAD79471236CCE1500ADC98A /* Int+Extension.swift */,
+				FA542487236D924900A04FA7 /* UITextField+InputView.swift */,
 			);
 			path = Default;
 			sourceTree = "<group>";
@@ -343,6 +376,7 @@
 		FA5D1B2B2368641200BDA32E /* Snaks */ = {
 			isa = PBXGroup;
 			children = (
+				FAD79464236C78C400ADC98A /* Cells */,
 				FA5D1B3B2368694600BDA32E /* DataSource */,
 				FA5D1B382368683900BDA32E /* Interface */,
 				FA5D1B2C236864BE00BDA32E /* SnacksViewController.swift */,
@@ -441,6 +475,26 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		FAD79464236C78C400ADC98A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FAD79468236C790E00ADC98A /* Xibs */,
+				FAD79465236C78DE00ADC98A /* SnackCell.swift */,
+				FAD7946B236CB2E700ADC98A /* SnackSection.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FAD79468236C790E00ADC98A /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				FAD79469236C792000ADC98A /* SnackCell.xib */,
+				FAD7946D236CB30A00ADC98A /* SnackSection.xib */,
+				FA542482236D84E500A04FA7 /* EmptyCell.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -527,12 +581,16 @@
 			files = (
 				FAD794592369A10400ADC98A /* Montserrat-ExtraBold.otf in Resources */,
 				FAD7944F2369987700ADC98A /* Montserrat-Regular.ttf in Resources */,
+				FA542486236D87A700A04FA7 /* AddSnackViewController.storyboard in Resources */,
 				FA5D1B3A2368684E00BDA32E /* SnacksViewController.storyboard in Resources */,
 				FAD7944E2369987700ADC98A /* Montserrat-Medium.ttf in Resources */,
 				FAD794502369987700ADC98A /* Montserrat-SemiBold.ttf in Resources */,
+				FA542483236D84E500A04FA7 /* EmptyCell.xib in Resources */,
 				FAD7945523699D5C00ADC98A /* Montserrat-Black.otf in Resources */,
 				78C61D5F2366EAB80005B5A7 /* LaunchScreen.storyboard in Resources */,
 				78A375F42366F78A00F45339 /* LoginViewController.storyboard in Resources */,
+				FAD7946E236CB30A00ADC98A /* SnackSection.xib in Resources */,
+				FAD7946A236C792000ADC98A /* SnackCell.xib in Resources */,
 				78C61D5C2366EAB80005B5A7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -620,13 +678,17 @@
 				78A375ED2366F5B500F45339 /* LoginPresenter.swift in Sources */,
 				FA5D1B312368653E00BDA32E /* SnacksInteractor.swift in Sources */,
 				78C61D772366EB340005B5A7 /* LoginViewController.swift in Sources */,
+				FAD7946C236CB2E700ADC98A /* SnackSection.swift in Sources */,
 				FAD7945F236B837600ADC98A /* Validatable.swift in Sources */,
+				FAD79472236CCE1500ADC98A /* Int+Extension.swift in Sources */,
 				78A375EF2366F5EF00F45339 /* LoginInteractor.swift in Sources */,
 				FAD7944523698A4500ADC98A /* SnacksTargetType.swift in Sources */,
 				FA5D1B262368618C00BDA32E /* User.swift in Sources */,
 				78C61D532366EAB70005B5A7 /* AppDelegate.swift in Sources */,
 				FAD7945323699A6300ADC98A /* Button.swift in Sources */,
+				FA542488236D924900A04FA7 /* UITextField+InputView.swift in Sources */,
 				78A375FD23670BDA00F45339 /* Router.swift in Sources */,
+				FAD79470236CB47E00ADC98A /* Moya+Extension.swift in Sources */,
 				78C61D7F2366F34C0005B5A7 /* UserInterfaceAssembly.swift in Sources */,
 				FAD7944323698A4500ADC98A /* SnacksNetwork.swift in Sources */,
 				FA5D1B1F23685E0A00BDA32E /* TargetType+Extension.swift in Sources */,
@@ -638,6 +700,7 @@
 				78C61D552366EAB70005B5A7 /* SceneDelegate.swift in Sources */,
 				FA5D1B2A236863C900BDA32E /* MoyaFactory.swift in Sources */,
 				FA05FAE6236981E700206794 /* Snack.swift in Sources */,
+				FAD79461236C76FC00ADC98A /* Date+Extension.swift in Sources */,
 				FA05FADE2369813200206794 /* AddSnackRouter.swift in Sources */,
 				FA5D1B282368627100BDA32E /* NetworkAssembly.swift in Sources */,
 				78A375F62366FB3E00F45339 /* LoginRouter.swift in Sources */,
@@ -646,6 +709,7 @@
 				FA05FAE02369815B00206794 /* AddSnackInteractor.swift in Sources */,
 				FA5D1B2323685E6400BDA32E /* String+Extension.swift in Sources */,
 				FAD7945D236B7A9500ADC98A /* KeychainService.swift in Sources */,
+				FAD79466236C78DE00ADC98A /* SnackCell.swift in Sources */,
 				78C61D7D2366F21D0005B5A7 /* Injector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -797,6 +861,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E9B948C2859C32D7A415C4E8 /* Pods-EkreativeSnacks.debug.xcconfig */;
 			buildSettings = {
+				APP_SERVER = "https://virtserver.swaggerhub.com/fenix20113/ek-minitalks/1.0.0";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9XF64VW82W;
@@ -816,6 +881,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 50A42A651F695FF58E4005BF /* Pods-EkreativeSnacks.release.xcconfig */;
 			buildSettings = {
+				APP_SERVER = "https://virtserver.swaggerhub.com/fenix20113/ek-minitalks/1.0.0";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9XF64VW82W;

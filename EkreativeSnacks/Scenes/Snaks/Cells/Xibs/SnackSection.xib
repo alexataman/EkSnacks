@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="SnackSection" id="8Ie-ng-6n8" customClass="SnackSection" customModule="EkreativeSnacks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="743" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVP-4T-m99">
+                    <rect key="frame" x="18" y="75" width="658" height="0.0"/>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                    <color key="textColor" red="0.50980392156862742" green="0.50588235294117645" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3N-Qq-RVS">
+                    <rect key="frame" x="684" y="66.5" width="39" height="17.5"/>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                    <color key="textColor" red="0.53725490196078429" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7b-Og-UBX">
+                    <rect key="frame" x="725" y="75" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                    <color key="textColor" red="0.1764705882352941" green="0.72549019607843135" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="uVP-4T-m99" firstAttribute="centerY" secondItem="8Ie-ng-6n8" secondAttribute="centerY" id="0vL-1v-3WU"/>
+                <constraint firstItem="O7b-Og-UBX" firstAttribute="centerY" secondItem="8Ie-ng-6n8" secondAttribute="centerY" id="21L-L7-5N3"/>
+                <constraint firstItem="I3N-Qq-RVS" firstAttribute="leading" secondItem="uVP-4T-m99" secondAttribute="trailing" constant="8" id="5ap-0M-21V"/>
+                <constraint firstItem="uVP-4T-m99" firstAttribute="leading" secondItem="0u8-vn-vzR" secondAttribute="leading" constant="18" id="H7g-jR-5hn"/>
+                <constraint firstItem="I3N-Qq-RVS" firstAttribute="centerY" secondItem="8Ie-ng-6n8" secondAttribute="centerY" id="NE5-9C-OEC"/>
+                <constraint firstItem="0u8-vn-vzR" firstAttribute="trailing" secondItem="O7b-Og-UBX" secondAttribute="trailing" constant="18" id="dXP-eQ-VR8"/>
+                <constraint firstItem="O7b-Og-UBX" firstAttribute="leading" secondItem="I3N-Qq-RVS" secondAttribute="trailing" constant="2" id="dqO-ru-THz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="0u8-vn-vzR"/>
+            <connections>
+                <outlet property="dayLabel" destination="uVP-4T-m99" id="9ru-aE-4ew"/>
+                <outlet property="priceLabel" destination="O7b-Og-UBX" id="T0M-zX-MxQ"/>
+            </connections>
+            <point key="canvasLocation" x="18.115942028985508" y="73.660714285714278"/>
+        </view>
+    </objects>
+</document>
