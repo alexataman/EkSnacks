@@ -18,7 +18,7 @@ enum Route {
 }
 
 final class Router {
-    private lazy var navigationController = UINavigationController()
+    private let navigationController = UINavigationController()
     
     // MARK: - Present route
     
@@ -27,7 +27,7 @@ final class Router {
         case .login:
             break
         case .snacks:
-            break
+            showSnacks()
         case .addSnack:
             break
         case .startUp(let window):
@@ -47,4 +47,15 @@ final class Router {
         let loginVC = LoginViewController.loadFromStoryboard()
         navigationController.viewControllers = [loginVC]
     }
+    
+    private func showSnacks() {
+        let snacksVC = SnacksViewController.loadFromStoryboard()
+        navigationController.viewControllers = [snacksVC]
+    }
+}
+
+// MARK: - Shared preferences
+
+extension Router {
+    static let shared = Router()
 }

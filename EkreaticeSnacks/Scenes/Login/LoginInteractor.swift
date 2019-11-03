@@ -9,9 +9,6 @@
 import Foundation
 
 final class LoginInteractor {
-    var loginRouter: LoginRouter
-    
-    init(loginRouter: LoginRouter) {
-        self.loginRouter = loginRouter
-    }
+    var loginNetwork: LoginNetwork?
+    var loginPresenterOutput: LoginPresenterOutput?
 }

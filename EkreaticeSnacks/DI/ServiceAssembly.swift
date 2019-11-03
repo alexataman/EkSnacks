@@ -12,7 +12,7 @@ import SwinjectStoryboard
 final class ServiceAssembly: Assembly {
     func assemble(container: Container) {
         container.register(Router.self) { resolver in
-            return Router()
+            return Router.shared
         }
     }
 }
