@@ -31,6 +31,8 @@ final class SnacksPresenter {
         
         tableView.dataSource = dataSource
         tableView.delegate = dataSource
+        
+        dataSource.deleteAction = snacksInteractor.delete
     }
     
     func roundTableView() {

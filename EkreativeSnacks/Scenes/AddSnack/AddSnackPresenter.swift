@@ -33,7 +33,8 @@ final class AddSnackPresenter {
             return
         }
         
-        let snack = Snack(name: name,
+        let snack = Snack(id: nil,
+                          name: name,
                           user: user,
                           date: selectedDateString,
                           price: price)

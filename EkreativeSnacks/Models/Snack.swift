@@ -9,6 +9,7 @@
 import Foundation
 
 struct Snack: Codable {
+    var id: Int?
     var name: String
     var user: String
     var date: String

@@ -13,8 +13,9 @@ target 'EkreativeSnacks' do
   pod 'IQKeyboardManagerSwift'
 
   target 'EkreativeSnacksTests' do
-    inherit! :search_paths
-    # Pods for testing
+    pod 'Quick', '~> 1.2'
+    pod 'Nimble', '~> 7.0'
+    pod 'SwiftyMocky', '~> 3.0'
   end
 
 end

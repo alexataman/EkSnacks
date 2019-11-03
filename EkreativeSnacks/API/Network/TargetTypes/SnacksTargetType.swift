@@ -10,6 +10,7 @@ import Moya
 enum SnackTargetType {
     case fetch
     case post(Snack)
+    case delete(Int)
 }
 
 extension SnackTargetType: TargetType {
@@ -20,7 +21,12 @@ extension SnackTargetType: TargetType {
     var baseURL: URL { return appServer }
 
     var path: String {
-        return "items"
+        switch self {
+        case .fetch, .post:
+            return "items"
+        case .delete(let id):
+            return "items/\(id)"
+        }
     }
 
     var method: Moya.Method {
@@ -29,6 +35,8 @@ extension SnackTargetType: TargetType {
             return .get
         case .post:
             return .post
+        case .delete:
+            return .delete
         }
     }
 
@@ -41,12 +49,12 @@ extension SnackTargetType: TargetType {
     }
 
     var sampleData: Data {
-        return "SnackJson".contentsOfFile().data(using: .utf8) ?? .init()
+        return .init()
     }
 
     var task: Task {
         switch self {
-        case .fetch:
+        case .fetch, .delete:
             return .requestPlain
         case .post(let snack):
             return .requestJSONEncodable(snack)

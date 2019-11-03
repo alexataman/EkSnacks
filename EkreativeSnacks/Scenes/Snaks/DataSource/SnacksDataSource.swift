@@ -14,6 +14,8 @@ final class SnacksDataSource: NSObject {
     
     internal weak var tableView: UITableView?
     
+    var deleteAction: ((Int) -> ())?
+    
     // MARK: - Private properties
     
     private var snacks: [Snack] = []
@@ -87,8 +89,20 @@ extension SnacksDataSource: UITableViewDataSource {
         return sections.isEmpty ? tableView.frame.height : 72
     }
     
-    // MARK: - Section
-    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if let id = values[indexPath.section][indexPath.row].id, (editingStyle == .delete) {
+            deleteAction?(id)
+        }
+    }
+}
+
+// MARK: - UITableViewDelegate
+
+extension SnacksDataSource: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return sections.isEmpty ? 0 : 40
     }
@@ -100,7 +114,3 @@ extension SnacksDataSource: UITableViewDataSource {
         return headerView
     }
 }
-
-// MARK: - UITableViewDelegate
-
-extension SnacksDataSource: UITableViewDelegate {}

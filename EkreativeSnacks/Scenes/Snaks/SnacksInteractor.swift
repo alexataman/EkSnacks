@@ -17,4 +17,8 @@ final class SnacksInteractor {
             }
         }.cauterize()
     }
+    
+    func delete(id: Int) {
+        snackNetwork?.delete(id: id).cauterize()
+    }
 }
