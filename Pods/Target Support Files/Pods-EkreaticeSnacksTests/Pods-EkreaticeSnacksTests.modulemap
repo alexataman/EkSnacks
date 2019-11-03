@@ -1,6 +1,0 @@
-framework module Pods_EkreaticeSnacksTests {
-  umbrella header "Pods-EkreaticeSnacksTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

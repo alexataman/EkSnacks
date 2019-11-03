@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.9.1)
+  - IQKeyboardManagerSwift (6.5.2)
   - KeychainSwift (17.0.0)
   - Moya (13.0.1):
     - Moya/Core (= 13.0.1)
@@ -16,36 +17,43 @@ PODS:
   - PromiseKit/UIKit (6.11.0):
     - PromiseKit/CorePromise
   - Result (4.1.0)
+  - SkyFloatingLabelTextField (3.7.0)
   - Swinject (2.6.2)
   - SwinjectStoryboard (2.2.0):
     - Swinject (~> 2.6)
 
 DEPENDENCIES:
+  - IQKeyboardManagerSwift
   - KeychainSwift
   - Moya
   - PromiseKit
+  - SkyFloatingLabelTextField
   - Swinject (~> 2.6.2)
   - SwinjectStoryboard (~> 2.2)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - IQKeyboardManagerSwift
     - KeychainSwift
     - Moya
     - PromiseKit
     - Result
+    - SkyFloatingLabelTextField
     - Swinject
     - SwinjectStoryboard
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  IQKeyboardManagerSwift: c75366f1f19590e8caeae45fcd5815c9289d6099
   KeychainSwift: 9f43f562dffc88af6efadb57d74b14c598eb337f
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   PromiseKit: e4863d06976e7dee5e41c04fc7371c16b3600292
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SkyFloatingLabelTextField: 4b46db0ab1ccde0919cded29c656e6b4805eda04
   Swinject: cf7458774b1b00323080a9c67e47a1ee7f9d2af1
   SwinjectStoryboard: 32512ef16c2b0ff5b8f823b23539c4a50f6d3383
 
-PODFILE CHECKSUM: 60d089cdcdac64267b9fe9b45bec0657816ea806
+PODFILE CHECKSUM: f604e49ac7e2ea07d3f50746f08eb6ed127b93f8
 
 COCOAPODS: 1.8.4
