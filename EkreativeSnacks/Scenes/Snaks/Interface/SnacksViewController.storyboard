@@ -6,6 +6,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Black.otf">
+            <string>Montserrat-Black</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Snacks View Controller-->
         <scene sceneID="PJ6-nF-mKU">
@@ -15,31 +20,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BbC-B4-LHJ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Po7-hS-CxZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQU-fA-zfI">
+                                        <rect key="frame" x="32" y="60" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Black" family="Montserrat" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeR-ah-Czh">
+                                        <rect key="frame" x="382" y="49" width="20" height="22"/>
+                                        <state key="normal" image="snack-logout"/>
+                                        <connections>
+                                            <action selector="logoutAction:" destination="Ijk-YL-GaL" eventType="touchUpInside" id="X8D-6X-Iv4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12549019607843137" green="0.58431372549019611" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="BeR-ah-Czh" firstAttribute="centerY" secondItem="Po7-hS-CxZ" secondAttribute="centerY" id="7Mb-p8-ehL"/>
+                                    <constraint firstItem="nQU-fA-zfI" firstAttribute="leading" secondItem="Po7-hS-CxZ" secondAttribute="leading" constant="32" id="HRE-Uc-bD5"/>
+                                    <constraint firstItem="nQU-fA-zfI" firstAttribute="centerY" secondItem="Po7-hS-CxZ" secondAttribute="centerY" id="Pbe-bt-g4A"/>
+                                    <constraint firstAttribute="trailing" secondItem="BeR-ah-Czh" secondAttribute="trailing" constant="12" id="wKU-PY-ueo"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BbC-B4-LHJ">
+                                <rect key="frame" x="0.0" y="110" width="414" height="632"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="bro-Dr-Q1s">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </view>
                                 <connections>
                                     <outlet property="dataSource" destination="Ijk-YL-GaL" id="dwG-NJ-HyM"/>
                                     <outlet property="delegate" destination="Ijk-YL-GaL" id="p5A-Nb-ZJ0"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NmW-5M-L7L">
+                                <rect key="frame" x="112.5" y="772" width="189" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZDp-pu-YLF"/>
+                                </constraints>
+                                <state key="normal" image="add-button"/>
+                                <connections>
+                                    <action selector="addSnackAction:" destination="Ijk-YL-GaL" eventType="touchUpInside" id="fY8-hc-aO2"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="BbC-B4-LHJ" firstAttribute="top" secondItem="cUp-ZT-W8g" secondAttribute="top" id="1EP-mG-cJy"/>
+                            <constraint firstItem="BbC-B4-LHJ" firstAttribute="top" secondItem="cUp-ZT-W8g" secondAttribute="top" constant="66" id="1EP-mG-cJy"/>
                             <constraint firstItem="cUp-ZT-W8g" firstAttribute="trailing" secondItem="BbC-B4-LHJ" secondAttribute="trailing" id="EiR-uq-xaD"/>
                             <constraint firstItem="BbC-B4-LHJ" firstAttribute="leading" secondItem="cUp-ZT-W8g" secondAttribute="leading" id="IFM-72-A0p"/>
-                            <constraint firstItem="cUp-ZT-W8g" firstAttribute="bottom" secondItem="BbC-B4-LHJ" secondAttribute="bottom" id="IVO-Ub-Rh1"/>
+                            <constraint firstItem="cUp-ZT-W8g" firstAttribute="bottom" secondItem="BbC-B4-LHJ" secondAttribute="bottom" constant="120" id="IVO-Ub-Rh1"/>
+                            <constraint firstItem="Po7-hS-CxZ" firstAttribute="leading" secondItem="cUp-ZT-W8g" secondAttribute="leading" id="J61-2F-U3U"/>
+                            <constraint firstItem="NmW-5M-L7L" firstAttribute="centerX" secondItem="1Kf-kF-TaG" secondAttribute="centerX" id="PTH-Zd-TzD"/>
+                            <constraint firstItem="Po7-hS-CxZ" firstAttribute="top" secondItem="1Kf-kF-TaG" secondAttribute="top" id="RJ7-hT-bnZ"/>
+                            <constraint firstItem="BbC-B4-LHJ" firstAttribute="top" secondItem="Po7-hS-CxZ" secondAttribute="bottom" constant="-10" id="WfG-zs-BVm"/>
+                            <constraint firstItem="cUp-ZT-W8g" firstAttribute="bottom" secondItem="NmW-5M-L7L" secondAttribute="bottom" constant="40" id="as6-8b-J77"/>
+                            <constraint firstItem="cUp-ZT-W8g" firstAttribute="trailing" secondItem="Po7-hS-CxZ" secondAttribute="trailing" id="xbk-3k-h00"/>
+                            <constraint firstItem="NmW-5M-L7L" firstAttribute="top" secondItem="BbC-B4-LHJ" secondAttribute="bottom" constant="30" id="yIM-Ns-6QP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cUp-ZT-W8g"/>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="BbC-B4-LHJ" id="epa-ea-5i3"/>
+                        <outlet property="usernameLabel" destination="nQU-fA-zfI" id="3sr-8s-f2Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V5h-HJ-MCn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133" y="108"/>
+            <point key="canvasLocation" x="131.8840579710145" y="107.8125"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="add-button" width="189" height="51"/>
+        <image name="snack-logout" width="19.5" height="16"/>
+    </resources>
 </document>

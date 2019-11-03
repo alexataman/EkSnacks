@@ -7,7 +7,18 @@
 //
 
 final class SnacksInteractor {
-    var snacksRouter: SnacksRouter?
     var snackNetwork: SnackNetwork?
     var snacksPresenterOutput: SnacksPresenterOutput?
+    
+    func fetchSnacks() {
+        snackNetwork?.fetch().done { [weak self] snacks in
+            async {
+                self?.snacksPresenterOutput?.reloadData(with: snacks)
+            }
+        }.cauterize()
+    }
+    
+    func delete(id: Int) {
+        snackNetwork?.delete(id: id).cauterize()
+    }
 }

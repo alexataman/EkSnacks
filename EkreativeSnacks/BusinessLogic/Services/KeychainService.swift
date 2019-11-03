@@ -23,6 +23,10 @@ final class KeychainService {
         keychain.set(value, forKey: key)
     }
     
+    func delete(key: String) {
+        keychain.delete(key)
+    }
+    
     func isValueExists(key: String) -> Bool {
         return keychain.get(key) != nil
     }

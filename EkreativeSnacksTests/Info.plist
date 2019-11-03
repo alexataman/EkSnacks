@@ -18,5 +18,7 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>APP_SERVER</key>
+	<string>https://virtserver.swaggerhub.com/fenix20113/ek-minitalks/1.0.0</string>
 </dict>
 </plist>

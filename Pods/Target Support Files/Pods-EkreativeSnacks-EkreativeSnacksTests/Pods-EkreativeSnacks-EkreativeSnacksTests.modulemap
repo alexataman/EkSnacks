@@ -1,0 +1,6 @@
+framework module Pods_EkreativeSnacks_EkreativeSnacksTests {
+  umbrella header "Pods-EkreativeSnacks-EkreativeSnacksTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

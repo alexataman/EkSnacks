@@ -29,7 +29,7 @@ final class LoginViewController: NoNavigationBarViewController, StoryboardLoadab
             return
         }
         
-        let name = firstNameTextField.text! + lastNameTextField.text!
+        let name = firstNameTextField.text! + " " + lastNameTextField.text!
         loginPresenter.save(user: .init(username: name))
     }
 }

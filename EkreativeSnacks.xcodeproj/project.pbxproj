@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C7FC79EECD899CBAA89EAE6 /* Pods_EkreativeSnacks_EkreativeSnacksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968ACD50BDF32AE317A47EBE /* Pods_EkreativeSnacks_EkreativeSnacksTests.framework */; };
 		78A375ED2366F5B500F45339 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A375EC2366F5B500F45339 /* LoginPresenter.swift */; };
 		78A375EF2366F5EF00F45339 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A375EE2366F5EF00F45339 /* LoginInteractor.swift */; };
 		78A375F42366F78A00F45339 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A375F32366F78A00F45339 /* LoginViewController.storyboard */; };
@@ -20,12 +21,14 @@
 		78C61D7D2366F21D0005B5A7 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C61D7C2366F21D0005B5A7 /* Injector.swift */; };
 		78C61D7F2366F34C0005B5A7 /* UserInterfaceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C61D7E2366F34C0005B5A7 /* UserInterfaceAssembly.swift */; };
 		AE1F3A2EC26E86476F0DB485 /* Pods_EkreativeSnacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F75B3F446AABAC79C6AD01 /* Pods_EkreativeSnacks.framework */; };
-		DCBFA9825B82573C3095B917 /* Pods_EkreativeSnacksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF5EED8FA7E23EB05DC0C0B /* Pods_EkreativeSnacksTests.framework */; };
 		FA05FADA2369809000206794 /* AddSnackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05FAD92369809000206794 /* AddSnackViewController.swift */; };
 		FA05FADC236980C700206794 /* AddSnackPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05FADB236980C700206794 /* AddSnackPresenter.swift */; };
 		FA05FADE2369813200206794 /* AddSnackRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05FADD2369813200206794 /* AddSnackRouter.swift */; };
 		FA05FAE02369815B00206794 /* AddSnackInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05FADF2369815B00206794 /* AddSnackInteractor.swift */; };
 		FA05FAE6236981E700206794 /* Snack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA05FAE5236981E700206794 /* Snack.swift */; };
+		FA542483236D84E500A04FA7 /* EmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA542482236D84E500A04FA7 /* EmptyCell.xib */; };
+		FA542486236D87A700A04FA7 /* AddSnackViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA542485236D87A700A04FA7 /* AddSnackViewController.storyboard */; };
+		FA542488236D924900A04FA7 /* UITextField+InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA542487236D924900A04FA7 /* UITextField+InputView.swift */; };
 		FA5D1B1323673E4C00BDA32E /* StoryboardLoadable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B1223673E4C00BDA32E /* StoryboardLoadable+Extension.swift */; };
 		FA5D1B152367415300BDA32E /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B142367415300BDA32E /* ServiceAssembly.swift */; };
 		FA5D1B1F23685E0A00BDA32E /* TargetType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B1E23685E0A00BDA32E /* TargetType+Extension.swift */; };
@@ -50,6 +53,21 @@
 		FAD794592369A10400ADC98A /* Montserrat-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAD794582369A10400ADC98A /* Montserrat-ExtraBold.otf */; };
 		FAD7945D236B7A9500ADC98A /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7945C236B7A9500ADC98A /* KeychainService.swift */; };
 		FAD7945F236B837600ADC98A /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7945E236B837600ADC98A /* Validatable.swift */; };
+		FAD79461236C76FC00ADC98A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD79460236C76FC00ADC98A /* Date+Extension.swift */; };
+		FAD79466236C78DE00ADC98A /* SnackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD79465236C78DE00ADC98A /* SnackCell.swift */; };
+		FAD7946A236C792000ADC98A /* SnackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD79469236C792000ADC98A /* SnackCell.xib */; };
+		FAD7946C236CB2E700ADC98A /* SnackSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7946B236CB2E700ADC98A /* SnackSection.swift */; };
+		FAD7946E236CB30A00ADC98A /* SnackSection.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD7946D236CB30A00ADC98A /* SnackSection.xib */; };
+		FAD79470236CB47E00ADC98A /* Moya+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7946F236CB47E00ADC98A /* Moya+Extension.swift */; };
+		FAD79472236CCE1500ADC98A /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD79471236CCE1500ADC98A /* Int+Extension.swift */; };
+		FAF8F262236EF06D00902333 /* UnexpectedNilError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8F261236EF06D00902333 /* UnexpectedNilError.swift */; };
+		FAF8F265236EF07600902333 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8F263236EF07500902333 /* NetworkProtocol.swift */; };
+		FAF8F266236EF07600902333 /* MoyaRequestClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8F264236EF07500902333 /* MoyaRequestClosure.swift */; };
+		FAF8F269236EF18E00902333 /* SnackNetworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8F268236EF18E00902333 /* SnackNetworkTest.swift */; };
+		FAF8F26F236EF60300902333 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8F26E236EF60300902333 /* Injector.swift */; };
+		FAF8F275236EFC4700902333 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8F274236EFC4700902333 /* Bundle+Extension.swift */; };
+		FAF8F277236F25DC00902333 /* Snacks.json in Resources */ = {isa = PBXBuildFile; fileRef = FAF8F276236F25DC00902333 /* Snacks.json */; };
+		FAF8F27A236F781200902333 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8F279236F781200902333 /* Bundle+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,8 +82,8 @@
 
 /* Begin PBXFileReference section */
 		353A062E0B0A15D2344100BF /* Pods-EkreativeSnacksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EkreativeSnacksTests.debug.xcconfig"; path = "Target Support Files/Pods-EkreativeSnacksTests/Pods-EkreativeSnacksTests.debug.xcconfig"; sourceTree = "<group>"; };
-		4EF5EED8FA7E23EB05DC0C0B /* Pods_EkreativeSnacksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EkreativeSnacksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A42A651F695FF58E4005BF /* Pods-EkreativeSnacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EkreativeSnacks.release.xcconfig"; path = "Target Support Files/Pods-EkreativeSnacks/Pods-EkreativeSnacks.release.xcconfig"; sourceTree = "<group>"; };
+		5BE603792ABC8802856A8909 /* Pods-EkreativeSnacks-EkreativeSnacksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EkreativeSnacks-EkreativeSnacksTests.release.xcconfig"; path = "Target Support Files/Pods-EkreativeSnacks-EkreativeSnacksTests/Pods-EkreativeSnacks-EkreativeSnacksTests.release.xcconfig"; sourceTree = "<group>"; };
 		78A375EC2366F5B500F45339 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		78A375EE2366F5EF00F45339 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		78A375F32366F78A00F45339 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
@@ -83,6 +101,8 @@
 		78C61D7C2366F21D0005B5A7 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		78C61D7E2366F34C0005B5A7 /* UserInterfaceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInterfaceAssembly.swift; sourceTree = "<group>"; };
 		91F75B3F446AABAC79C6AD01 /* Pods_EkreativeSnacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EkreativeSnacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		968ACD50BDF32AE317A47EBE /* Pods_EkreativeSnacks_EkreativeSnacksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EkreativeSnacks_EkreativeSnacksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CFF2D2E09B66DEB5592AA58 /* Pods-EkreativeSnacks-EkreativeSnacksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EkreativeSnacks-EkreativeSnacksTests.debug.xcconfig"; path = "Target Support Files/Pods-EkreativeSnacks-EkreativeSnacksTests/Pods-EkreativeSnacks-EkreativeSnacksTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7D406D3DB199FD88042A1E2 /* Pods-EkreativeSnacksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EkreativeSnacksTests.release.xcconfig"; path = "Target Support Files/Pods-EkreativeSnacksTests/Pods-EkreativeSnacksTests.release.xcconfig"; sourceTree = "<group>"; };
 		E9B948C2859C32D7A415C4E8 /* Pods-EkreativeSnacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EkreativeSnacks.debug.xcconfig"; path = "Target Support Files/Pods-EkreativeSnacks/Pods-EkreativeSnacks.debug.xcconfig"; sourceTree = "<group>"; };
 		FA05FAD92369809000206794 /* AddSnackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSnackViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +110,9 @@
 		FA05FADD2369813200206794 /* AddSnackRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSnackRouter.swift; sourceTree = "<group>"; };
 		FA05FADF2369815B00206794 /* AddSnackInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSnackInteractor.swift; sourceTree = "<group>"; };
 		FA05FAE5236981E700206794 /* Snack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snack.swift; sourceTree = "<group>"; };
+		FA542482236D84E500A04FA7 /* EmptyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyCell.xib; sourceTree = "<group>"; };
+		FA542485236D87A700A04FA7 /* AddSnackViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddSnackViewController.storyboard; sourceTree = "<group>"; };
+		FA542487236D924900A04FA7 /* UITextField+InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+InputView.swift"; sourceTree = "<group>"; };
 		FA5D1B1223673E4C00BDA32E /* StoryboardLoadable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoryboardLoadable+Extension.swift"; sourceTree = "<group>"; };
 		FA5D1B142367415300BDA32E /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 		FA5D1B1E23685E0A00BDA32E /* TargetType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetType+Extension.swift"; sourceTree = "<group>"; };
@@ -114,6 +137,21 @@
 		FAD794582369A10400ADC98A /* Montserrat-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.otf"; sourceTree = "<group>"; };
 		FAD7945C236B7A9500ADC98A /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		FAD7945E236B837600ADC98A /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Validatable.swift; path = EkreativeSnacks/Library/Validatable.swift; sourceTree = SOURCE_ROOT; };
+		FAD79460236C76FC00ADC98A /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		FAD79465236C78DE00ADC98A /* SnackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackCell.swift; sourceTree = "<group>"; };
+		FAD79469236C792000ADC98A /* SnackCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnackCell.xib; sourceTree = "<group>"; };
+		FAD7946B236CB2E700ADC98A /* SnackSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackSection.swift; sourceTree = "<group>"; };
+		FAD7946D236CB30A00ADC98A /* SnackSection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SnackSection.xib; sourceTree = "<group>"; };
+		FAD7946F236CB47E00ADC98A /* Moya+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+Extension.swift"; sourceTree = "<group>"; };
+		FAD79471236CCE1500ADC98A /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		FAF8F261236EF06D00902333 /* UnexpectedNilError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnexpectedNilError.swift; sourceTree = "<group>"; };
+		FAF8F263236EF07500902333 /* NetworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		FAF8F264236EF07500902333 /* MoyaRequestClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaRequestClosure.swift; sourceTree = "<group>"; };
+		FAF8F268236EF18E00902333 /* SnackNetworkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackNetworkTest.swift; sourceTree = "<group>"; };
+		FAF8F26E236EF60300902333 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		FAF8F274236EFC4700902333 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		FAF8F276236F25DC00902333 /* Snacks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Snacks.json; sourceTree = "<group>"; };
+		FAF8F279236F781200902333 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCBFA9825B82573C3095B917 /* Pods_EkreativeSnacksTests.framework in Frameworks */,
+				0C7FC79EECD899CBAA89EAE6 /* Pods_EkreativeSnacks_EkreativeSnacksTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				91F75B3F446AABAC79C6AD01 /* Pods_EkreativeSnacks.framework */,
-				4EF5EED8FA7E23EB05DC0C0B /* Pods_EkreativeSnacksTests.framework */,
+				968ACD50BDF32AE317A47EBE /* Pods_EkreativeSnacks_EkreativeSnacksTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,6 +190,8 @@
 				50A42A651F695FF58E4005BF /* Pods-EkreativeSnacks.release.xcconfig */,
 				353A062E0B0A15D2344100BF /* Pods-EkreativeSnacksTests.debug.xcconfig */,
 				C7D406D3DB199FD88042A1E2 /* Pods-EkreativeSnacksTests.release.xcconfig */,
+				9CFF2D2E09B66DEB5592AA58 /* Pods-EkreativeSnacks-EkreativeSnacksTests.debug.xcconfig */,
+				5BE603792ABC8802856A8909 /* Pods-EkreativeSnacks-EkreativeSnacksTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -216,14 +256,14 @@
 		78C61D512366EAB70005B5A7 /* EkreativeSnacks */ = {
 			isa = PBXGroup;
 			children = (
-				FAD7945A236B798600ADC98A /* BusinessLogic */,
-				FAD7945123699A0800ADC98A /* UI */,
 				FAD7943A23698A3700ADC98A /* API */,
-				FA5D1B242368617D00BDA32E /* Models */,
-				78A375F7236702FE00F45339 /* Library */,
+				FAD7945A236B798600ADC98A /* BusinessLogic */,
 				78C61D7B2366EE350005B5A7 /* DI */,
-				78C61D782366EC1E0005B5A7 /* Supporting Files */,
+				78A375F7236702FE00F45339 /* Library */,
+				FA5D1B242368617D00BDA32E /* Models */,
 				78C61D742366EAFF0005B5A7 /* Scenes */,
+				78C61D782366EC1E0005B5A7 /* Supporting Files */,
+				FAD7945123699A0800ADC98A /* UI */,
 			);
 			path = EkreativeSnacks;
 			sourceTree = "<group>";
@@ -231,6 +271,11 @@
 		78C61D682366EAB80005B5A7 /* EkreativeSnacksTests */ = {
 			isa = PBXGroup;
 			children = (
+				FAF8F278236F780000902333 /* Extensions */,
+				FAF8F273236EFAE500902333 /* Responses */,
+				FAF8F26D236EF5F800902333 /* DI */,
+				FAF8F267236EF17700902333 /* Network */,
+				FAF8F260236EF01200902333 /* Common */,
 				78C61D6B2366EAB80005B5A7 /* Info.plist */,
 			);
 			path = EkreativeSnacksTests;
@@ -299,12 +344,21 @@
 		FA05FAD82369807A00206794 /* AddSnack */ = {
 			isa = PBXGroup;
 			children = (
+				FA542484236D879200A04FA7 /* Interface */,
 				FA05FAD92369809000206794 /* AddSnackViewController.swift */,
 				FA05FADB236980C700206794 /* AddSnackPresenter.swift */,
 				FA05FADD2369813200206794 /* AddSnackRouter.swift */,
 				FA05FADF2369815B00206794 /* AddSnackInteractor.swift */,
 			);
 			path = AddSnack;
+			sourceTree = "<group>";
+		};
+		FA542484236D879200A04FA7 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				FA542485236D87A700A04FA7 /* AddSnackViewController.storyboard */,
+			);
+			path = Interface;
 			sourceTree = "<group>";
 		};
 		FA5D1B1123673E3800BDA32E /* UI */ = {
@@ -319,6 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				FA5D1B1E23685E0A00BDA32E /* TargetType+Extension.swift */,
+				FAD7946F236CB47E00ADC98A /* Moya+Extension.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -327,6 +382,10 @@
 			isa = PBXGroup;
 			children = (
 				FA5D1B2223685E6400BDA32E /* String+Extension.swift */,
+				FAD79460236C76FC00ADC98A /* Date+Extension.swift */,
+				FAD79471236CCE1500ADC98A /* Int+Extension.swift */,
+				FA542487236D924900A04FA7 /* UITextField+InputView.swift */,
+				FAF8F274236EFC4700902333 /* Bundle+Extension.swift */,
 			);
 			path = Default;
 			sourceTree = "<group>";
@@ -343,6 +402,7 @@
 		FA5D1B2B2368641200BDA32E /* Snaks */ = {
 			isa = PBXGroup;
 			children = (
+				FAD79464236C78C400ADC98A /* Cells */,
 				FA5D1B3B2368694600BDA32E /* DataSource */,
 				FA5D1B382368683900BDA32E /* Interface */,
 				FA5D1B2C236864BE00BDA32E /* SnacksViewController.swift */,
@@ -441,6 +501,68 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		FAD79464236C78C400ADC98A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FAD79468236C790E00ADC98A /* Xibs */,
+				FAD79465236C78DE00ADC98A /* SnackCell.swift */,
+				FAD7946B236CB2E700ADC98A /* SnackSection.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FAD79468236C790E00ADC98A /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				FAD79469236C792000ADC98A /* SnackCell.xib */,
+				FAD7946D236CB30A00ADC98A /* SnackSection.xib */,
+				FA542482236D84E500A04FA7 /* EmptyCell.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		FAF8F260236EF01200902333 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FAF8F264236EF07500902333 /* MoyaRequestClosure.swift */,
+				FAF8F263236EF07500902333 /* NetworkProtocol.swift */,
+				FAF8F261236EF06D00902333 /* UnexpectedNilError.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FAF8F267236EF17700902333 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FAF8F268236EF18E00902333 /* SnackNetworkTest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FAF8F26D236EF5F800902333 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				FAF8F26E236EF60300902333 /* Injector.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		FAF8F273236EFAE500902333 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				FAF8F276236F25DC00902333 /* Snacks.json */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		FAF8F278236F780000902333 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAF8F279236F781200902333 /* Bundle+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -471,6 +593,7 @@
 				78C61D612366EAB80005B5A7 /* Sources */,
 				78C61D622366EAB80005B5A7 /* Frameworks */,
 				78C61D632366EAB80005B5A7 /* Resources */,
+				1C966D50A34B9DC1081D15C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -497,6 +620,7 @@
 					};
 					78C61D642366EAB80005B5A7 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1110;
 						TestTargetID = 78C61D4E2366EAB70005B5A7;
 					};
 				};
@@ -527,12 +651,16 @@
 			files = (
 				FAD794592369A10400ADC98A /* Montserrat-ExtraBold.otf in Resources */,
 				FAD7944F2369987700ADC98A /* Montserrat-Regular.ttf in Resources */,
+				FA542486236D87A700A04FA7 /* AddSnackViewController.storyboard in Resources */,
 				FA5D1B3A2368684E00BDA32E /* SnacksViewController.storyboard in Resources */,
 				FAD7944E2369987700ADC98A /* Montserrat-Medium.ttf in Resources */,
 				FAD794502369987700ADC98A /* Montserrat-SemiBold.ttf in Resources */,
+				FA542483236D84E500A04FA7 /* EmptyCell.xib in Resources */,
 				FAD7945523699D5C00ADC98A /* Montserrat-Black.otf in Resources */,
 				78C61D5F2366EAB80005B5A7 /* LaunchScreen.storyboard in Resources */,
 				78A375F42366F78A00F45339 /* LoginViewController.storyboard in Resources */,
+				FAD7946E236CB30A00ADC98A /* SnackSection.xib in Resources */,
+				FAD7946A236C792000ADC98A /* SnackCell.xib in Resources */,
 				78C61D5C2366EAB80005B5A7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,6 +669,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF8F277236F25DC00902333 /* Snacks.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,6 +696,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C966D50A34B9DC1081D15C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EkreativeSnacks-EkreativeSnacksTests/Pods-EkreativeSnacks-EkreativeSnacksTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EkreativeSnacks-EkreativeSnacksTests/Pods-EkreativeSnacks-EkreativeSnacksTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EkreativeSnacks-EkreativeSnacksTests/Pods-EkreativeSnacks-EkreativeSnacksTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		1E6D681106F06A8DE5FA982F /* [CP] Embed Pods Frameworks */ = {
@@ -601,7 +747,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EkreativeSnacksTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-EkreativeSnacks-EkreativeSnacksTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -620,13 +766,18 @@
 				78A375ED2366F5B500F45339 /* LoginPresenter.swift in Sources */,
 				FA5D1B312368653E00BDA32E /* SnacksInteractor.swift in Sources */,
 				78C61D772366EB340005B5A7 /* LoginViewController.swift in Sources */,
+				FAD7946C236CB2E700ADC98A /* SnackSection.swift in Sources */,
 				FAD7945F236B837600ADC98A /* Validatable.swift in Sources */,
+				FAD79472236CCE1500ADC98A /* Int+Extension.swift in Sources */,
 				78A375EF2366F5EF00F45339 /* LoginInteractor.swift in Sources */,
 				FAD7944523698A4500ADC98A /* SnacksTargetType.swift in Sources */,
 				FA5D1B262368618C00BDA32E /* User.swift in Sources */,
 				78C61D532366EAB70005B5A7 /* AppDelegate.swift in Sources */,
 				FAD7945323699A6300ADC98A /* Button.swift in Sources */,
+				FA542488236D924900A04FA7 /* UITextField+InputView.swift in Sources */,
 				78A375FD23670BDA00F45339 /* Router.swift in Sources */,
+				FAD79470236CB47E00ADC98A /* Moya+Extension.swift in Sources */,
+				FAF8F275236EFC4700902333 /* Bundle+Extension.swift in Sources */,
 				78C61D7F2366F34C0005B5A7 /* UserInterfaceAssembly.swift in Sources */,
 				FAD7944323698A4500ADC98A /* SnacksNetwork.swift in Sources */,
 				FA5D1B1F23685E0A00BDA32E /* TargetType+Extension.swift in Sources */,
@@ -638,6 +789,7 @@
 				78C61D552366EAB70005B5A7 /* SceneDelegate.swift in Sources */,
 				FA5D1B2A236863C900BDA32E /* MoyaFactory.swift in Sources */,
 				FA05FAE6236981E700206794 /* Snack.swift in Sources */,
+				FAD79461236C76FC00ADC98A /* Date+Extension.swift in Sources */,
 				FA05FADE2369813200206794 /* AddSnackRouter.swift in Sources */,
 				FA5D1B282368627100BDA32E /* NetworkAssembly.swift in Sources */,
 				78A375F62366FB3E00F45339 /* LoginRouter.swift in Sources */,
@@ -646,6 +798,7 @@
 				FA05FAE02369815B00206794 /* AddSnackInteractor.swift in Sources */,
 				FA5D1B2323685E6400BDA32E /* String+Extension.swift in Sources */,
 				FAD7945D236B7A9500ADC98A /* KeychainService.swift in Sources */,
+				FAD79466236C78DE00ADC98A /* SnackCell.swift in Sources */,
 				78C61D7D2366F21D0005B5A7 /* Injector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -654,6 +807,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF8F26F236EF60300902333 /* Injector.swift in Sources */,
+				FAF8F27A236F781200902333 /* Bundle+Extension.swift in Sources */,
+				FAF8F265236EF07600902333 /* NetworkProtocol.swift in Sources */,
+				FAF8F262236EF06D00902333 /* UnexpectedNilError.swift in Sources */,
+				FAF8F266236EF07600902333 /* MoyaRequestClosure.swift in Sources */,
+				FAF8F269236EF18E00902333 /* SnackNetworkTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -797,6 +956,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E9B948C2859C32D7A415C4E8 /* Pods-EkreativeSnacks.debug.xcconfig */;
 			buildSettings = {
+				APP_SERVER = "https://virtserver.swaggerhub.com/fenix20113/ek-minitalks/1.0.0";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9XF64VW82W;
@@ -816,6 +976,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 50A42A651F695FF58E4005BF /* Pods-EkreativeSnacks.release.xcconfig */;
 			buildSettings = {
+				APP_SERVER = "https://virtserver.swaggerhub.com/fenix20113/ek-minitalks/1.0.0";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9XF64VW82W;
@@ -833,10 +994,11 @@
 		};
 		78C61D722366EAB80005B5A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 353A062E0B0A15D2344100BF /* Pods-EkreativeSnacksTests.debug.xcconfig */;
+			baseConfigurationReference = 9CFF2D2E09B66DEB5592AA58 /* Pods-EkreativeSnacks-EkreativeSnacksTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9XF64VW82W;
 				INFOPLIST_FILE = EkreativeSnacksTests/Info.plist;
@@ -848,6 +1010,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ekreative.EkreativeSnacksTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EkreativeSnacks.app/EkreativeSnacks";
@@ -856,10 +1019,11 @@
 		};
 		78C61D732366EAB80005B5A7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7D406D3DB199FD88042A1E2 /* Pods-EkreativeSnacksTests.release.xcconfig */;
+			baseConfigurationReference = 5BE603792ABC8802856A8909 /* Pods-EkreativeSnacks-EkreativeSnacksTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9XF64VW82W;
 				INFOPLIST_FILE = EkreativeSnacksTests/Info.plist;
