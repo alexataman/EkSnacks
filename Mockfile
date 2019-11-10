@@ -1,0 +1,12 @@
+sourceryCommand: null
+EkreativeSnacksTests:
+  sources:
+    include:
+    - ./EkreativeSnacks
+  output: ./EkreativeSnacksTests/Mock.generated.swift
+  targets:
+  - EkreativeSnacksTests
+  testable:
+  - EkreativeSnacks
+  import:
+  - Foundation

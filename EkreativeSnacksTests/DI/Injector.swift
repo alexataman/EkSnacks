@@ -38,4 +38,17 @@ final class Injector {
         }
     }
     
+    func register(module: ModuleType) {
+        switch module {
+        case .snacksPresenter:
+            container.register(SnacksPresenterInput.self, name: "stub") { resolver in
+                SnacksPresenter(
+                    snacksInteractor: SnacksInteractorInputMock(),
+                    keychainService: KeychainService(keyPrefix: KeychainService.Prefix.test),
+                    snacksRouter: SnacksRouterInputMock()
+                )
+            }
+        }
+    }
+    
 }

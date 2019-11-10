@@ -15,7 +15,7 @@ final class ServiceAssembly: Assembly {
             return Router.shared
         }
         container.register(KeychainService.self) { _ in
-            .init()
+            .init(keyPrefix: KeychainService.Prefix.main)
         }
     }
 }

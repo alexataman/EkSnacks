@@ -10,10 +10,22 @@ import KeychainSwift
 
 struct KeychainKeys {
     static let userData = "user-data"
+    
+    static let all = [userData]
 }
 
 final class KeychainService {
-    private let keychain = KeychainSwift(keyPrefix: "com.ekreative.EkreativeSnacks")
+    private var keyPrefix = ""
+    private lazy var keychain = KeychainSwift(keyPrefix: keyPrefix)
+    
+    struct Prefix {
+        static let main = "com.ekreative.EkreativeSnacks"
+        static let test = "com.ekreative.EkreativeSnacksTests"
+    }
+    
+    init(keyPrefix: String) {
+        self.keyPrefix = keyPrefix
+    }
     
     func get(key: String) -> String {
         return keychain.get(key) ?? ""
@@ -25,6 +37,10 @@ final class KeychainService {
     
     func delete(key: String) {
         keychain.delete(key)
+    }
+    
+    func clear() {
+        KeychainKeys.all.forEach { self.keychain.delete($0) }
     }
     
     func isValueExists(key: String) -> Bool {

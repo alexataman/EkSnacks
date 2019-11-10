@@ -22,7 +22,7 @@ final class Router {
     // MARK: - Private properties
     
     private let navigationController = UINavigationController()
-    private lazy var keychainService = KeychainService()
+    private lazy var keychainService = KeychainService(keyPrefix: KeychainService.Prefix.main)
     
     // MARK: - Present route
     

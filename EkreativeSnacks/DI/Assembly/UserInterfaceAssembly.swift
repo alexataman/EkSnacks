@@ -55,9 +55,9 @@ private extension UserInterfaceAssembly {
 private extension UserInterfaceAssembly {
     func registerSnacksDependencies(container: Container) {
         container.register(SnacksPresenter.self) { resolver in
-            .init(snacksInteractor: resolver.resolve(SnacksInteractor.self)!,
+            .init(snacksInteractor: resolver.resolve(SnacksInteractorInput.self)!,
                   keychainService: resolver.resolve(KeychainService.self)!,
-                  snacksRouter: resolver.resolve(SnacksRouter.self)!)
+                  snacksRouter: resolver.resolve(SnacksRouterInput.self)!)
         }
         container.register(SnacksInteractor.self) { resolver in
             .init()
@@ -65,8 +65,14 @@ private extension UserInterfaceAssembly {
             controller.snackNetwork = resolver.resolve(SnackNetwork.self)
             controller.snacksPresenterOutput = resolver.resolve(SnacksPresenter.self)
         }
-        container.register(SnacksRouter.self) { resolver in
-            .init(router: resolver.resolve(Router.self)!)
+        container.register(SnacksInteractorInput.self) { resolver in
+            resolver.resolve(SnacksInteractor.self)!
+        }
+        container.register(SnacksRouterInput.self) { resolver in
+            SnacksRouter(router: resolver.resolve(Router.self)!)
+        }
+        container.register(SnacksPresenterInput.self) { resolver in
+            resolver.resolve(SnacksPresenter.self)!
         }
     }
 }

@@ -42,6 +42,9 @@
 		FA5D1B332368657A00BDA32E /* SnacksRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B322368657A00BDA32E /* SnacksRouter.swift */; };
 		FA5D1B3A2368684E00BDA32E /* SnacksViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5D1B392368684E00BDA32E /* SnacksViewController.storyboard */; };
 		FA5D1B3D236869AB00BDA32E /* SnacksDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5D1B3C236869AB00BDA32E /* SnacksDataSource.swift */; };
+		FA95E0142378B7220098B93C /* KeychainTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA95E0132378B7220098B93C /* KeychainTest.swift */; };
+		FA95E0162378C1CC0098B93C /* Mock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA95E0152378C1CC0098B93C /* Mock.generated.swift */; };
+		FA95E0182378C2090098B93C /* ModuleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA95E0172378C2090098B93C /* ModuleType.swift */; };
 		FAD7944323698A4500ADC98A /* SnacksNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7943D23698A4500ADC98A /* SnacksNetwork.swift */; };
 		FAD7944523698A4500ADC98A /* SnacksTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7944023698A4500ADC98A /* SnacksTargetType.swift */; };
 		FAD7944E2369987700ADC98A /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAD7944B2369987700ADC98A /* Montserrat-Medium.ttf */; };
@@ -126,6 +129,9 @@
 		FA5D1B322368657A00BDA32E /* SnacksRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnacksRouter.swift; sourceTree = "<group>"; };
 		FA5D1B392368684E00BDA32E /* SnacksViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SnacksViewController.storyboard; sourceTree = "<group>"; };
 		FA5D1B3C236869AB00BDA32E /* SnacksDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnacksDataSource.swift; sourceTree = "<group>"; };
+		FA95E0132378B7220098B93C /* KeychainTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainTest.swift; sourceTree = "<group>"; };
+		FA95E0152378C1CC0098B93C /* Mock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.generated.swift; sourceTree = "<group>"; };
+		FA95E0172378C2090098B93C /* ModuleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleType.swift; sourceTree = "<group>"; };
 		FAD7943D23698A4500ADC98A /* SnacksNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnacksNetwork.swift; sourceTree = "<group>"; };
 		FAD7944023698A4500ADC98A /* SnacksTargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnacksTargetType.swift; sourceTree = "<group>"; };
 		FAD7944B2369987700ADC98A /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
@@ -271,6 +277,8 @@
 		78C61D682366EAB80005B5A7 /* EkreativeSnacksTests */ = {
 			isa = PBXGroup;
 			children = (
+				FA95E0152378C1CC0098B93C /* Mock.generated.swift */,
+				FA95E0122378B7130098B93C /* Services */,
 				FAF8F278236F780000902333 /* Extensions */,
 				FAF8F273236EFAE500902333 /* Responses */,
 				FAF8F26D236EF5F800902333 /* DI */,
@@ -429,6 +437,14 @@
 			path = DataSource;
 			sourceTree = "<group>";
 		};
+		FA95E0122378B7130098B93C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FA95E0132378B7220098B93C /* KeychainTest.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		FAD7943A23698A3700ADC98A /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -527,6 +543,7 @@
 				FAF8F264236EF07500902333 /* MoyaRequestClosure.swift */,
 				FAF8F263236EF07500902333 /* NetworkProtocol.swift */,
 				FAF8F261236EF06D00902333 /* UnexpectedNilError.swift */,
+				FA95E0172378C2090098B93C /* ModuleType.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -808,11 +825,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAF8F26F236EF60300902333 /* Injector.swift in Sources */,
+				FA95E0142378B7220098B93C /* KeychainTest.swift in Sources */,
 				FAF8F27A236F781200902333 /* Bundle+Extension.swift in Sources */,
 				FAF8F265236EF07600902333 /* NetworkProtocol.swift in Sources */,
 				FAF8F262236EF06D00902333 /* UnexpectedNilError.swift in Sources */,
 				FAF8F266236EF07600902333 /* MoyaRequestClosure.swift in Sources */,
+				FA95E0162378C1CC0098B93C /* Mock.generated.swift in Sources */,
 				FAF8F269236EF18E00902333 /* SnackNetworkTest.swift in Sources */,
+				FA95E0182378C2090098B93C /* ModuleType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -956,7 +976,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E9B948C2859C32D7A415C4E8 /* Pods-EkreativeSnacks.debug.xcconfig */;
 			buildSettings = {
-				APP_SERVER = "https://virtserver.swaggerhub.com/fenix20113/ek-minitalks/1.0.0";
+				APP_SERVER = "https://8ebbd86f.ngrok.io";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9XF64VW82W;
@@ -976,7 +996,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 50A42A651F695FF58E4005BF /* Pods-EkreativeSnacks.release.xcconfig */;
 			buildSettings = {
-				APP_SERVER = "https://virtserver.swaggerhub.com/fenix20113/ek-minitalks/1.0.0";
+				APP_SERVER = "https://8ebbd86f.ngrok.io";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9XF64VW82W;

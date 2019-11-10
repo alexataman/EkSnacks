@@ -6,7 +6,13 @@
 //  Copyright © 2019 Oleksand Atamanskyi. All rights reserved.
 //
 
-final class SnacksRouter {
+//sourcery: AutoMockable
+protocol SnacksRouterInput {
+    func showLogin()
+    func showAddSnack()
+}
+
+final class SnacksRouter: SnacksRouterInput {
     private var router: Router
     
     init(router: Router) {

@@ -17,7 +17,7 @@ final class SnacksViewController: NoNavigationBarViewController, StoryboardLoada
     
     // MARK: - Dependencies
     
-    var snacksPresenter: SnacksPresenter!
+    var snacksPresenter: SnacksPresenterInput!
     
     // MARK: - View Controller lifecycle
     

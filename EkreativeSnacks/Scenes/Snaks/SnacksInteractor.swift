@@ -6,7 +6,16 @@
 //  Copyright © 2019 Oleksand Atamanskyi. All rights reserved.
 //
 
-final class SnacksInteractor {
+//sourcery: AutoMockable
+protocol SnacksInteractorInput {
+    func fetchSnacks()
+    func delete(id: Int)
+    
+    var snackNetwork: SnackNetwork? { get set }
+    var snacksPresenterOutput: SnacksPresenterOutput? { get set }
+}
+
+final class SnacksInteractor: SnacksInteractorInput {
     var snackNetwork: SnackNetwork?
     var snacksPresenterOutput: SnacksPresenterOutput?
     
