@@ -43,4 +43,17 @@ final class AddSnackViewController: UIViewController, StoryboardLoadable {
         
         addSnackPresenter.sendSnack(name: name, price: price.toInt())
     }
+    
+    // Test func to tests UI features
+    public func readActionTextFieldToUpdateItOnUI() -> Void {
+        if productTextField.text == "Alex" {
+            productTextField.text = "Oleksandr"
+        }
+        
+        if priceTextField.text == "100" {
+            priceTextField.text = "200"
+        }
+        
+        return ()
+    }
 }
